@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PWLPZoneMessage.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PWLPZoneMessage</TokenIdentifier>
+			<Abstract type="html">A PWZoneMessage is a communication (generally marketing-related) sent from the server.</Abstract>
+			<DeclaredIn>PWLPZoneMessage.h</DeclaredIn>
+            
+			
+			<NodeRef refid="11"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPZoneMessage/setTitle:</TokenIdentifier>
+			<Abstract type="html">Returns the title of this message. This property will never return a nil value.</Abstract>
+			<DeclaredIn>PWLPZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *title</Declaration>
+			
+			<ReturnValue><Abstract type="html">The title of this message.</Abstract></ReturnValue>
+			<Anchor>//api/name/title</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPZoneMessage/title</TokenIdentifier>
+			<Abstract type="html">Returns the title of this message. This property will never return a nil value.</Abstract>
+			<DeclaredIn>PWLPZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *title</Declaration>
+			
+			<ReturnValue><Abstract type="html">The title of this message.</Abstract></ReturnValue>
+			<Anchor>//api/name/title</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWLPZoneMessage/title</TokenIdentifier>
+			<Abstract type="html">Returns the title of this message. This property will never return a nil value.</Abstract>
+			<DeclaredIn>PWLPZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *title</Declaration>
+			
+			<ReturnValue><Abstract type="html">The title of this message.</Abstract></ReturnValue>
+			<Anchor>//api/name/title</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPZoneMessage/setBody:</TokenIdentifier>
+			<Abstract type="html">Returns the body of this message. The value returned by this method is usually HTML. This property will never return a nil value.</Abstract>
+			<DeclaredIn>PWLPZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *body</Declaration>
+			
+			<ReturnValue><Abstract type="html">The body of this message.</Abstract></ReturnValue>
+			<Anchor>//api/name/body</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPZoneMessage/body</TokenIdentifier>
+			<Abstract type="html">Returns the body of this message. The value returned by this method is usually HTML. This property will never return a nil value.</Abstract>
+			<DeclaredIn>PWLPZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *body</Declaration>
+			
+			<ReturnValue><Abstract type="html">The body of this message.</Abstract></ReturnValue>
+			<Anchor>//api/name/body</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWLPZoneMessage/body</TokenIdentifier>
+			<Abstract type="html">Returns the body of this message. The value returned by this method is usually HTML. This property will never return a nil value.</Abstract>
+			<DeclaredIn>PWLPZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *body</Declaration>
+			
+			<ReturnValue><Abstract type="html">The body of this message.</Abstract></ReturnValue>
+			<Anchor>//api/name/body</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPZoneMessage/setMetaData:</TokenIdentifier>
+			<Abstract type="html">Returns the metadata associated with the message.</Abstract>
+			<DeclaredIn>PWLPZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSDictionary *metaData</Declaration>
+			
+			<ReturnValue><Abstract type="html">Returns the metadata of this message.</Abstract></ReturnValue>
+			<Anchor>//api/name/metaData</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPZoneMessage/metaData</TokenIdentifier>
+			<Abstract type="html">Returns the metadata associated with the message.</Abstract>
+			<DeclaredIn>PWLPZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSDictionary *metaData</Declaration>
+			
+			<ReturnValue><Abstract type="html">Returns the metadata of this message.</Abstract></ReturnValue>
+			<Anchor>//api/name/metaData</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWLPZoneMessage/metaData</TokenIdentifier>
+			<Abstract type="html">Returns the metadata associated with the message.</Abstract>
+			<DeclaredIn>PWLPZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSDictionary *metaData</Declaration>
+			
+			<ReturnValue><Abstract type="html">Returns the metadata of this message.</Abstract></ReturnValue>
+			<Anchor>//api/name/metaData</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPZoneMessage/setExpirationDate:</TokenIdentifier>
+			<Abstract type="html">Returns the expiration date of this message. An application may wish to display messages differently based on their expiration dates. This property will never return a nil value.</Abstract>
+			<DeclaredIn>PWLPZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSDate *expirationDate</Declaration>
+			
+			<ReturnValue><Abstract type="html">The expiration date of this message.</Abstract></ReturnValue>
+			<Anchor>//api/name/expirationDate</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPZoneMessage/expirationDate</TokenIdentifier>
+			<Abstract type="html">Returns the expiration date of this message. An application may wish to display messages differently based on their expiration dates. This property will never return a nil value.</Abstract>
+			<DeclaredIn>PWLPZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSDate *expirationDate</Declaration>
+			
+			<ReturnValue><Abstract type="html">The expiration date of this message.</Abstract></ReturnValue>
+			<Anchor>//api/name/expirationDate</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWLPZoneMessage/expirationDate</TokenIdentifier>
+			<Abstract type="html">Returns the expiration date of this message. An application may wish to display messages differently based on their expiration dates. This property will never return a nil value.</Abstract>
+			<DeclaredIn>PWLPZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSDate *expirationDate</Declaration>
+			
+			<ReturnValue><Abstract type="html">The expiration date of this message.</Abstract></ReturnValue>
+			<Anchor>//api/name/expirationDate</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPZoneMessage/setIdentifier:</TokenIdentifier>
+			<Abstract type="html">Returns the internal unique identifier of the message. This identifier also idenfities the campaign this message was sent for.</Abstract>
+			<DeclaredIn>PWLPZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *identifier</Declaration>
+			
+			<ReturnValue><Abstract type="html">The internal unique identifier message.</Abstract></ReturnValue>
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPZoneMessage/identifier</TokenIdentifier>
+			<Abstract type="html">Returns the internal unique identifier of the message. This identifier also idenfities the campaign this message was sent for.</Abstract>
+			<DeclaredIn>PWLPZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *identifier</Declaration>
+			
+			<ReturnValue><Abstract type="html">The internal unique identifier message.</Abstract></ReturnValue>
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWLPZoneMessage/identifier</TokenIdentifier>
+			<Abstract type="html">Returns the internal unique identifier of the message. This identifier also idenfities the campaign this message was sent for.</Abstract>
+			<DeclaredIn>PWLPZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *identifier</Declaration>
+			
+			<ReturnValue><Abstract type="html">The internal unique identifier message.</Abstract></ReturnValue>
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPZoneMessage/setIsRead:</TokenIdentifier>
+			<Abstract type="html">A Boolean value indicating whether or not the entry is read.</Abstract>
+			<DeclaredIn>PWLPZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) BOOL isRead</Declaration>
+			
+			<ReturnValue><Abstract type="html">A Boolean value indicating whether or not the message has been read.</Abstract></ReturnValue>
+			<Anchor>//api/name/isRead</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPZoneMessage/isRead</TokenIdentifier>
+			<Abstract type="html">A Boolean value indicating whether or not the entry is read.</Abstract>
+			<DeclaredIn>PWLPZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) BOOL isRead</Declaration>
+			
+			<ReturnValue><Abstract type="html">A Boolean value indicating whether or not the message has been read.</Abstract></ReturnValue>
+			<Anchor>//api/name/isRead</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWLPZoneMessage/isRead</TokenIdentifier>
+			<Abstract type="html">A Boolean value indicating whether or not the entry is read.</Abstract>
+			<DeclaredIn>PWLPZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) BOOL isRead</Declaration>
+			
+			<ReturnValue><Abstract type="html">A Boolean value indicating whether or not the message has been read.</Abstract></ReturnValue>
+			<Anchor>//api/name/isRead</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPZoneMessage/setCampaignType:</TokenIdentifier>
+			<Abstract type="html">A string containing the campaign type of the message.</Abstract>
+			<DeclaredIn>PWLPZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *campaignType</Declaration>
+			
+			<ReturnValue><Abstract type="html">A string containing the campaign type of the message.</Abstract></ReturnValue>
+			<Anchor>//api/name/campaignType</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPZoneMessage/campaignType</TokenIdentifier>
+			<Abstract type="html">A string containing the campaign type of the message.</Abstract>
+			<DeclaredIn>PWLPZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *campaignType</Declaration>
+			
+			<ReturnValue><Abstract type="html">A string containing the campaign type of the message.</Abstract></ReturnValue>
+			<Anchor>//api/name/campaignType</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWLPZoneMessage/campaignType</TokenIdentifier>
+			<Abstract type="html">A string containing the campaign type of the message.</Abstract>
+			<DeclaredIn>PWLPZoneMessage.h</DeclaredIn>
+			
+			<Declaration>@property (readonly) NSString *campaignType</Declaration>
+			
+			<ReturnValue><Abstract type="html">A string containing the campaign type of the message.</Abstract></ReturnValue>
+			<Anchor>//api/name/campaignType</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

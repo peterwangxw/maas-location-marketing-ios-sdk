@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PWLPGeoZoneManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PWLPGeoZoneManager</TokenIdentifier>
+			<Abstract type="html">The geozone manager is in charge of monitoring geozones and informing about geozone related events by posting notifications and sending messages to its delegate.</Abstract>
+			<DeclaredIn>PWLPGeoZoneManager.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPGeoZoneManager/setAvailableZones:</TokenIdentifier>
+			<Abstract type="html">The available geozones handled by the zone manager.</Abstract>
+			<DeclaredIn>PWLPGeoZoneManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *availableZones</Declaration>
+			
+			
+			<Anchor>//api/name/availableZones</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPGeoZoneManager/availableZones</TokenIdentifier>
+			<Abstract type="html">The available geozones handled by the zone manager.</Abstract>
+			<DeclaredIn>PWLPGeoZoneManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *availableZones</Declaration>
+			
+			
+			<Anchor>//api/name/availableZones</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWLPGeoZoneManager/availableZones</TokenIdentifier>
+			<Abstract type="html">The available geozones handled by the zone manager.</Abstract>
+			<DeclaredIn>PWLPGeoZoneManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *availableZones</Declaration>
+			
+			
+			<Anchor>//api/name/availableZones</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPGeoZoneManager/setMonitoredZones:</TokenIdentifier>
+			<Abstract type="html">The zones currently being monitored by the zone manager.</Abstract>
+			<DeclaredIn>PWLPGeoZoneManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *monitoredZones</Declaration>
+			
+			
+			<Anchor>//api/name/monitoredZones</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPGeoZoneManager/monitoredZones</TokenIdentifier>
+			<Abstract type="html">The zones currently being monitored by the zone manager.</Abstract>
+			<DeclaredIn>PWLPGeoZoneManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *monitoredZones</Declaration>
+			
+			
+			<Anchor>//api/name/monitoredZones</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWLPGeoZoneManager/monitoredZones</TokenIdentifier>
+			<Abstract type="html">The zones currently being monitored by the zone manager.</Abstract>
+			<DeclaredIn>PWLPGeoZoneManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *monitoredZones</Declaration>
+			
+			
+			<Anchor>//api/name/monitoredZones</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPGeoZoneManager/setMaximumRegionsMonitored:</TokenIdentifier>
+			<Abstract type="html">The maximum amonunt of monitored regions.</Abstract>
+			<DeclaredIn>PWLPGeoZoneManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger maximumRegionsMonitored</Declaration>
+			
+			
+			<Anchor>//api/name/maximumRegionsMonitored</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPGeoZoneManager/maximumRegionsMonitored</TokenIdentifier>
+			<Abstract type="html">The maximum amonunt of monitored regions.</Abstract>
+			<DeclaredIn>PWLPGeoZoneManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger maximumRegionsMonitored</Declaration>
+			
+			
+			<Anchor>//api/name/maximumRegionsMonitored</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWLPGeoZoneManager/maximumRegionsMonitored</TokenIdentifier>
+			<Abstract type="html">The maximum amonunt of monitored regions.</Abstract>
+			<DeclaredIn>PWLPGeoZoneManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger maximumRegionsMonitored</Declaration>
+			
+			
+			<Anchor>//api/name/maximumRegionsMonitored</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPGeoZoneManager/setDelegate:</TokenIdentifier>
+			<Abstract type="html">The delegate object that will receive the callbacks defined in the PWLPZoneManagerDelegate protocol.</Abstract>
+			<DeclaredIn>PWLPGeoZoneManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;PWLPZoneManagerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPGeoZoneManager/delegate</TokenIdentifier>
+			<Abstract type="html">The delegate object that will receive the callbacks defined in the PWLPZoneManagerDelegate protocol.</Abstract>
+			<DeclaredIn>PWLPGeoZoneManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;PWLPZoneManagerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWLPGeoZoneManager/delegate</TokenIdentifier>
+			<Abstract type="html">The delegate object that will receive the callbacks defined in the PWLPZoneManagerDelegate protocol.</Abstract>
+			<DeclaredIn>PWLPGeoZoneManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;PWLPZoneManagerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPGeoZoneManager/init</TokenIdentifier>
+			<Abstract type="html">Initializes a &apos;PWLPGeoZoneManager&apos; object.</Abstract>
+			<DeclaredIn>PWLPGeoZoneManager.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			<ReturnValue><Abstract type="html">A &apos;PWLPGeoZoneManager&apos; instance.</Abstract></ReturnValue>
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPGeoZoneManager/start</TokenIdentifier>
+			<Abstract type="html">Starts the zone manager.</Abstract>
+			<DeclaredIn>PWLPGeoZoneManager.h</DeclaredIn>
+			
+			<Declaration>- (void)start</Declaration>
+			
+			
+			<Anchor>//api/name/start</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPGeoZoneManager/stop</TokenIdentifier>
+			<Abstract type="html">Stops the zone manager.</Abstract>
+			<DeclaredIn>PWLPGeoZoneManager.h</DeclaredIn>
+			
+			<Declaration>- (void)stop</Declaration>
+			
+			
+			<Anchor>//api/name/stop</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

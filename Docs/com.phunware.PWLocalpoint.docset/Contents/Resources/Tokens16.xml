@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/PWLPZoneManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/PWLPZoneManager</TokenIdentifier>
+			<Abstract type="html">Protocol that needs to be implemented by all zone managers in the Location Marketing service.</Abstract>
+			<DeclaredIn>PWLPZoneManagerProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="16"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWLPZoneManager/setAvailableZones:</TokenIdentifier>
+			<Abstract type="html">The available zones handled by the zone manager.</Abstract>
+			<DeclaredIn>PWLPZoneManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *availableZones</Declaration>
+			
+			
+			<Anchor>//api/name/availableZones</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWLPZoneManager/availableZones</TokenIdentifier>
+			<Abstract type="html">The available zones handled by the zone manager.</Abstract>
+			<DeclaredIn>PWLPZoneManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *availableZones</Declaration>
+			
+			
+			<Anchor>//api/name/availableZones</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/PWLPZoneManager/availableZones</TokenIdentifier>
+			<Abstract type="html">The available zones handled by the zone manager.</Abstract>
+			<DeclaredIn>PWLPZoneManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *availableZones</Declaration>
+			
+			
+			<Anchor>//api/name/availableZones</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWLPZoneManager/setMonitoredZones:</TokenIdentifier>
+			<Abstract type="html">The zones currently being monitored by the zone manager.</Abstract>
+			<DeclaredIn>PWLPZoneManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *monitoredZones</Declaration>
+			
+			
+			<Anchor>//api/name/monitoredZones</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWLPZoneManager/monitoredZones</TokenIdentifier>
+			<Abstract type="html">The zones currently being monitored by the zone manager.</Abstract>
+			<DeclaredIn>PWLPZoneManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *monitoredZones</Declaration>
+			
+			
+			<Anchor>//api/name/monitoredZones</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/PWLPZoneManager/monitoredZones</TokenIdentifier>
+			<Abstract type="html">The zones currently being monitored by the zone manager.</Abstract>
+			<DeclaredIn>PWLPZoneManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *monitoredZones</Declaration>
+			
+			
+			<Anchor>//api/name/monitoredZones</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWLPZoneManager/setDelegate:</TokenIdentifier>
+			<Abstract type="html">The delegate object that will receive the callbacks defined in the PWLPZoneManagerDelegate protocol.</Abstract>
+			<DeclaredIn>PWLPZoneManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;PWLPZoneManagerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWLPZoneManager/delegate</TokenIdentifier>
+			<Abstract type="html">The delegate object that will receive the callbacks defined in the PWLPZoneManagerDelegate protocol.</Abstract>
+			<DeclaredIn>PWLPZoneManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;PWLPZoneManagerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/PWLPZoneManager/delegate</TokenIdentifier>
+			<Abstract type="html">The delegate object that will receive the callbacks defined in the PWLPZoneManagerDelegate protocol.</Abstract>
+			<DeclaredIn>PWLPZoneManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;PWLPZoneManagerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWLPZoneManager/start</TokenIdentifier>
+			<Abstract type="html">Starts the zone manager.</Abstract>
+			<DeclaredIn>PWLPZoneManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)start</Declaration>
+			
+			
+			<Anchor>//api/name/start</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWLPZoneManager/stop</TokenIdentifier>
+			<Abstract type="html">Stops the zone manager.</Abstract>
+			<DeclaredIn>PWLPZoneManagerProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)stop</Declaration>
+			
+			
+			<Anchor>//api/name/stop</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

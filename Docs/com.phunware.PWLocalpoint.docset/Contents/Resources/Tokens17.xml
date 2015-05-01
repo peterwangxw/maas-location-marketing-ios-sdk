@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/PWLPZoneManagerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/PWLPZoneManagerDelegate</TokenIdentifier>
+			<Abstract type="html">The Zone Manager interface is the central point for configuring the delivery of zone-related events. You use an instance of this class to establish the parameters that determine when location and heading events should be delivered and to start and stop the actual delivery of those events. You can also use a zone manager object to retrieve the most recent location and heading data.</Abstract>
+			<DeclaredIn>PWLPZoneManagerDelegateProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWLPZoneManagerDelegate/zoneManager:didEnterZone:</TokenIdentifier>
+			<Abstract type="html">Invoked when the device enters a zone</Abstract>
+			<DeclaredIn>PWLPZoneManagerDelegateProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)zoneManager:(id&lt;PWLPZoneManager&gt;)zoneManager didEnterZone:(id&lt;PWLPZone&gt;)zone</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>zoneManager</Name>
+					<Abstract type="html">The zone manager that generated the callback.</Abstract>
+				</Parameter><Parameter>
+					<Name>zone</Name>
+					<Abstract type="html">The zone that was entered.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/zoneManager:didEnterZone:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWLPZoneManagerDelegate/zoneManager:didExitZone:</TokenIdentifier>
+			<Abstract type="html">Invoked when the device exits a zone</Abstract>
+			<DeclaredIn>PWLPZoneManagerDelegateProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)zoneManager:(id&lt;PWLPZoneManager&gt;)zoneManager didExitZone:(id&lt;PWLPZone&gt;)zone</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>zoneManager</Name>
+					<Abstract type="html">The zone manager that generated the callback.</Abstract>
+				</Parameter><Parameter>
+					<Name>zone</Name>
+					<Abstract type="html">The zone that was exited.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/zoneManager:didExitZone:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWLPZoneManagerDelegate/zoneManager:didAddZones:</TokenIdentifier>
+			<Abstract type="html">Invoked when one or more zones are added to the list of available zones</Abstract>
+			<DeclaredIn>PWLPZoneManagerDelegateProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)zoneManager:(id&lt;PWLPZoneManager&gt;)zoneManager didAddZones:(NSArray *)zones</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>zoneManager</Name>
+					<Abstract type="html">The zone manager that generated the callback.</Abstract>
+				</Parameter><Parameter>
+					<Name>zones</Name>
+					<Abstract type="html">An array containing the zones that were added.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/zoneManager:didAddZones:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWLPZoneManagerDelegate/zoneManager:didDeleteZones:</TokenIdentifier>
+			<Abstract type="html">Invoked when one or more zones are removed from the list of available zones</Abstract>
+			<DeclaredIn>PWLPZoneManagerDelegateProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)zoneManager:(id&lt;PWLPZoneManager&gt;)zoneManager didDeleteZones:(NSArray *)zoneIdentifiers</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>zoneManager</Name>
+					<Abstract type="html">The zone manager that generated the callback.</Abstract>
+				</Parameter><Parameter>
+					<Name>zoneIdentifiers</Name>
+					<Abstract type="html">An array containing the zone identifiers of the zones that were deleted.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/zoneManager:didDeleteZones:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWLPZoneManagerDelegate/zoneManager:didModifyZones:</TokenIdentifier>
+			<Abstract type="html">Invoked when one or more zones are updated in the list of available zones</Abstract>
+			<DeclaredIn>PWLPZoneManagerDelegateProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)zoneManager:(id&lt;PWLPZoneManager&gt;)zoneManager didModifyZones:(NSArray *)zones</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>zoneManager</Name>
+					<Abstract type="html">The zone manager that generated the callback.</Abstract>
+				</Parameter><Parameter>
+					<Name>zones</Name>
+					<Abstract type="html">An array containing the zones that were modified.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/zoneManager:didModifyZones:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWLPZoneManagerDelegate/zoneManager:didCheckInForZone:</TokenIdentifier>
+			<Abstract type="html">Invoked when the a check-in operation is perfomed in a zone</Abstract>
+			<DeclaredIn>PWLPZoneManagerDelegateProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)zoneManager:(id&lt;PWLPZoneManager&gt;)zoneManager didCheckInForZone:(id&lt;PWLPZone&gt;)zone</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>zoneManager</Name>
+					<Abstract type="html">The zone manager that generated the callback.</Abstract>
+				</Parameter><Parameter>
+					<Name>zone</Name>
+					<Abstract type="html">The zone where the check-in was performed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/zoneManager:didCheckInForZone:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWLPZoneManagerDelegate/zoneManager:failedCheckInForZone:error:</TokenIdentifier>
+			<Abstract type="html">Invoked when the a check-in operation fails</Abstract>
+			<DeclaredIn>PWLPZoneManagerDelegateProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)zoneManager:(id&lt;PWLPZoneManager&gt;)zoneManager failedCheckInForZone:(id&lt;PWLPZone&gt;)zone error:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>zoneManager</Name>
+					<Abstract type="html">The zone manager that generated the callback.</Abstract>
+				</Parameter><Parameter>
+					<Name>zone</Name>
+					<Abstract type="html">The zone where the check-in failed.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">The error that caused the check-in to fail.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/zoneManager:failedCheckInForZone:error:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/PWLPLocationUpdatesManagerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/PWLPLocationUpdatesManagerDelegate</TokenIdentifier>
+			<Abstract type="html">PWLocationUpdatesManagerDelegate objects will receive the same callbacks as CLLocationManagerDelegate objects
+and also have the option to specify some desired values for the PWLocationUpdatesManager configuration.</Abstract>
+			<DeclaredIn>PWLPLocationUpdatesManagerDelegateProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="14"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWLPLocationUpdatesManagerDelegate/desiredStandardLocationServiceStatus</TokenIdentifier>
+			<Abstract type="html">Implemented to indicate the desired standard location service status.</Abstract>
+			<DeclaredIn>PWLPLocationUpdatesManagerDelegateProtocol.h</DeclaredIn>
+			
+			<Declaration>- (PWLPStandardLocationServiceStatus)desiredStandardLocationServiceStatus</Declaration>
+			
+			
+			<Anchor>//api/name/desiredStandardLocationServiceStatus</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWLPLocationUpdatesManagerDelegate/desiredSignificantLocationChangeServiceStatus</TokenIdentifier>
+			<Abstract type="html">Implemented to indicate the desired significant changes service status.</Abstract>
+			<DeclaredIn>PWLPLocationUpdatesManagerDelegateProtocol.h</DeclaredIn>
+			
+			<Declaration>- (PWLPSignificantLocationChangeServiceStatus)desiredSignificantLocationChangeServiceStatus</Declaration>
+			
+			
+			<Anchor>//api/name/desiredSignificantLocationChangeServiceStatus</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWLPLocationUpdatesManagerDelegate/desiredRegionsToMonitor</TokenIdentifier>
+			<Abstract type="html">Implemented to indicate the desired regions to be monitored. The region objects must be a sublclass of CLRegion.</Abstract>
+			<DeclaredIn>PWLPLocationUpdatesManagerDelegateProtocol.h</DeclaredIn>
+			
+			<Declaration>- (NSSet *)desiredRegionsToMonitor</Declaration>
+			
+			
+			<Anchor>//api/name/desiredRegionsToMonitor</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWLPLocationUpdatesManagerDelegate/locationManager:willStopMonitoringRegion:</TokenIdentifier>
+			<Abstract type="html">Indicate that a region will stop being monitored.</Abstract>
+			<DeclaredIn>PWLPLocationUpdatesManagerDelegateProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)locationManager:(CLLocationManager *)manager willStopMonitoringRegion:(CLRegion *)region</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>manager</Name>
+					<Abstract type="html">The location manager monitoring the region.</Abstract>
+				</Parameter><Parameter>
+					<Name>region</Name>
+					<Abstract type="html">The region that will stop being monitored.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/locationManager:willStopMonitoringRegion:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

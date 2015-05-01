@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PWLPLocationManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PWLPLocationManager</TokenIdentifier>
+			<Abstract type="html">Provides the Location Marketing service with information about the locations stored in the device.</Abstract>
+			<DeclaredIn>PWLPLocationManager.h</DeclaredIn>
+            
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPLocationManager/setLocations:</TokenIdentifier>
+			<Abstract type="html">Returns the list of locations stored in the device.</Abstract>
+			<DeclaredIn>PWLPLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *locations</Declaration>
+			
+			<ReturnValue><Abstract type="html">An array of locations stored in the device.</Abstract></ReturnValue>
+			<Anchor>//api/name/locations</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPLocationManager/locations</TokenIdentifier>
+			<Abstract type="html">Returns the list of locations stored in the device.</Abstract>
+			<DeclaredIn>PWLPLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *locations</Declaration>
+			
+			<ReturnValue><Abstract type="html">An array of locations stored in the device.</Abstract></ReturnValue>
+			<Anchor>//api/name/locations</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWLPLocationManager/locations</TokenIdentifier>
+			<Abstract type="html">Returns the list of locations stored in the device.</Abstract>
+			<DeclaredIn>PWLPLocationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *locations</Declaration>
+			
+			<ReturnValue><Abstract type="html">An array of locations stored in the device.</Abstract></ReturnValue>
+			<Anchor>//api/name/locations</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPLocationManager/fetchLocationsWithCompletionHandler:</TokenIdentifier>
+			<Abstract type="html">@discussion
+Fetches the complete set of locations from the Location Marketing server and calls the given completion handler.</Abstract>
+			<DeclaredIn>PWLPLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (void)fetchLocationsWithCompletionHandler:(void ( ^ ) ( UIBackgroundFetchResult ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">Block that will be executed when the fectch is complete. The fetch result paramter can have the following values:
+
+UIBackgroundFetchResultNewData if a successful call to Location Marketing was made.
+UIBackgroundFetchResultNoData if locations are not out of sync.
+UIBackgroundFetchResultFailed if there is a problem.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchLocationsWithCompletionHandler:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPLocationManager/locationsOutOfSync</TokenIdentifier>
+			<Abstract type="html">Indicates if the list of locations stored in the device is out of sync.
+@discussion
+This can be due to time since last sync or distance traveled.
+@return
+Returns YES if we should ask Location Marketing for an updated set of locations. NO otherwise.</Abstract>
+			<DeclaredIn>PWLPLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)locationsOutOfSync</Declaration>
+			
+			
+			<Anchor>//api/name/locationsOutOfSync</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPLocationManager/getLocationWithIdentifier:</TokenIdentifier>
+			<Abstract type="html">Gets a location from the device database.</Abstract>
+			<DeclaredIn>PWLPLocationManager.h</DeclaredIn>
+			
+			<Declaration>- (PWLPGeozone *)getLocationWithIdentifier:(NSString *)identifier</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>identifier</Name>
+					<Abstract type="html">The identifier of the location to get.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getLocationWithIdentifier:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

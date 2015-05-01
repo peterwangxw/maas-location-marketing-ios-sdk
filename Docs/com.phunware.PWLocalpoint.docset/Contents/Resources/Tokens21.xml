@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/PWLPStandardLocationServiceStatus.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/PWLPStandardLocationServiceStatus</TokenIdentifier>
+			<Abstract type="html">The status of the standard location service.</Abstract>
+			<DeclaredIn>PWLPLocationUpdatesManagerDelegateProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="21"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWLPStandardLocationServiceStatusOff</TokenIdentifier>
+            <Abstract type="html">The standard location service is turned off.
+     </Abstract>
+            <Declaration>PWLPStandardLocationServiceStatusOff</Declaration>
+            
+            <DeclaredIn>PWLPLocationUpdatesManagerDelegateProtocol.h</DeclaredIn>
+            
+            <NodeRef refid="21"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWLPStandardLocationServiceStatusLow</TokenIdentifier>
+            <Abstract type="html">The standard location service has a low accuracy.
+     </Abstract>
+            <Declaration>PWLPStandardLocationServiceStatusLow</Declaration>
+            
+            <DeclaredIn>PWLPLocationUpdatesManagerDelegateProtocol.h</DeclaredIn>
+            
+            <NodeRef refid="21"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWLPStandardLocationServiceStatusMedium</TokenIdentifier>
+            <Abstract type="html">The standard location service has a medium accuracy.
+     </Abstract>
+            <Declaration>PWLPStandardLocationServiceStatusMedium</Declaration>
+            
+            <DeclaredIn>PWLPLocationUpdatesManagerDelegateProtocol.h</DeclaredIn>
+            
+            <NodeRef refid="21"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/PWLPStandardLocationServiceStatusBest</TokenIdentifier>
+            <Abstract type="html">The standard location service has a high accuracy.
+     </Abstract>
+            <Declaration>PWLPStandardLocationServiceStatusBest</Declaration>
+            
+            <DeclaredIn>PWLPLocationUpdatesManagerDelegateProtocol.h</DeclaredIn>
+            
+            <NodeRef refid="21"/>
+        </Token>
+        
+        
+	</File>
+</Tokens>

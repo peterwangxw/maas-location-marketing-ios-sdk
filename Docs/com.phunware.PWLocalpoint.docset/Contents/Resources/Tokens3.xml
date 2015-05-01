@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PWLPDevice.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PWLPDevice</TokenIdentifier>
+			<Abstract type="html">A &apos;PWLPDevice&apos; is used to extract information about the user&apos;s device.</Abstract>
+			<DeclaredIn>PWLPDevice.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPDevice/setIdentifierType:</TokenIdentifier>
+			<Abstract type="html">The type of identifier.</Abstract>
+			<DeclaredIn>PWLPDevice.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *identifierType</Declaration>
+			
+			
+			<Anchor>//api/name/identifierType</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPDevice/identifierType</TokenIdentifier>
+			<Abstract type="html">The type of identifier.</Abstract>
+			<DeclaredIn>PWLPDevice.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *identifierType</Declaration>
+			
+			
+			<Anchor>//api/name/identifierType</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWLPDevice/identifierType</TokenIdentifier>
+			<Abstract type="html">The type of identifier.</Abstract>
+			<DeclaredIn>PWLPDevice.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *identifierType</Declaration>
+			
+			
+			<Anchor>//api/name/identifierType</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPDevice/setIdentifier:</TokenIdentifier>
+			<Abstract type="html">The identifier the SDK uses.</Abstract>
+			<DeclaredIn>PWLPDevice.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *identifier</Declaration>
+			
+			
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPDevice/identifier</TokenIdentifier>
+			<Abstract type="html">The identifier the SDK uses.</Abstract>
+			<DeclaredIn>PWLPDevice.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *identifier</Declaration>
+			
+			
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWLPDevice/identifier</TokenIdentifier>
+			<Abstract type="html">The identifier the SDK uses.</Abstract>
+			<DeclaredIn>PWLPDevice.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *identifier</Declaration>
+			
+			
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPDevice/setDeviceType:</TokenIdentifier>
+			<Abstract type="html">The type of device the user is using.</Abstract>
+			<DeclaredIn>PWLPDevice.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *deviceType</Declaration>
+			
+			
+			<Anchor>//api/name/deviceType</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPDevice/deviceType</TokenIdentifier>
+			<Abstract type="html">The type of device the user is using.</Abstract>
+			<DeclaredIn>PWLPDevice.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *deviceType</Declaration>
+			
+			
+			<Anchor>//api/name/deviceType</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWLPDevice/deviceType</TokenIdentifier>
+			<Abstract type="html">The type of device the user is using.</Abstract>
+			<DeclaredIn>PWLPDevice.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *deviceType</Declaration>
+			
+			
+			<Anchor>//api/name/deviceType</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWLPDevice/sharedInstance</TokenIdentifier>
+			<Abstract type="html">Get a singleton instance of PWLPDevice.</Abstract>
+			<DeclaredIn>PWLPDevice.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)sharedInstance</Declaration>
+			
+			<ReturnValue><Abstract type="html">A singleton instance of PWLPDevice.</Abstract></ReturnValue>
+			<Anchor>//api/name/sharedInstance</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

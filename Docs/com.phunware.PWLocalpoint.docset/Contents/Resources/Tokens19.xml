@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/PWLocalpointDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/PWLocalpointDelegate</TokenIdentifier>
+			<Abstract type="html">Protocol that allows the localpoint delegate to be notified of errors when starting the localpoint service and to control the display of local notifications.</Abstract>
+			<DeclaredIn>PWLocalpoint.h</DeclaredIn>
+            
+			
+			<NodeRef refid="19"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWLocalpointDelegate/localpointFailedToStartWithError:</TokenIdentifier>
+			<Abstract type="html">Indicates that the localpoint service failed to start.</Abstract>
+			<DeclaredIn>PWLocalpoint.h</DeclaredIn>
+			
+			<Declaration>- (void)localpointFailedToStartWithError:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">The error that caused the localpoint service to fail to start.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/localpointFailedToStartWithError:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PWLocalpointDelegate/localpointShouldDisplayLocalNotification:</TokenIdentifier>
+			<Abstract type="html">Asks the delegate if the local notification should be displayed.</Abstract>
+			<DeclaredIn>PWLocalpoint.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)localpointShouldDisplayLocalNotification:(PWLPLocalNotification *)notification</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>notification</Name>
+					<Abstract type="html">The notification that the localpoint service intends to post.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/localpointShouldDisplayLocalNotification:</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

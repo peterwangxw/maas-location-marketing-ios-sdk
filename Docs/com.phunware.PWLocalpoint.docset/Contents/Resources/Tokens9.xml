@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PWLPVersion.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PWLPVersion</TokenIdentifier>
+			<Abstract type="html">Class used to retrieve the localpoint sdk version information.</Abstract>
+			<DeclaredIn>PWLPVersion.h</DeclaredIn>
+            
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWLPVersion/major</TokenIdentifier>
+			<Abstract type="html">The major number of the SDK version.</Abstract>
+			<DeclaredIn>PWLPVersion.h</DeclaredIn>
+			
+			<Declaration>+ (NSInteger)major</Declaration>
+			
+			
+			<Anchor>//api/name/major</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWLPVersion/minor</TokenIdentifier>
+			<Abstract type="html">The minor number of SDK version.</Abstract>
+			<DeclaredIn>PWLPVersion.h</DeclaredIn>
+			
+			<Declaration>+ (NSInteger)minor</Declaration>
+			
+			
+			<Anchor>//api/name/minor</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWLPVersion/revision</TokenIdentifier>
+			<Abstract type="html">The revision number of SDK version.</Abstract>
+			<DeclaredIn>PWLPVersion.h</DeclaredIn>
+			
+			<Declaration>+ (NSInteger)revision</Declaration>
+			
+			
+			<Anchor>//api/name/revision</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWLPVersion/version</TokenIdentifier>
+			<Abstract type="html">The version of SDK version.</Abstract>
+			<DeclaredIn>PWLPVersion.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)version</Declaration>
+			
+			
+			<Anchor>//api/name/version</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

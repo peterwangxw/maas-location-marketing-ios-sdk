@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PWLPZoneMessageManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PWLPZoneMessageManager</TokenIdentifier>
+			<Abstract type="html">The PWLPZoneMessageManager class is the central point for managing messages delivered to your application. A zone message manager object provides support for the following message-related activities:</Abstract>
+			<DeclaredIn>PWLPZoneMessageManager.h</DeclaredIn>
+            
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWLPZoneMessageManager/sharedManager</TokenIdentifier>
+			<Abstract type="html">Returns the shared instance of the PWLPZoneMessageManager class.</Abstract>
+			<DeclaredIn>PWLPZoneMessageManager.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)sharedManager</Declaration>
+			
+			<ReturnValue><Abstract type="html">The shared instance of the PWLPZoneMessageManager class.</Abstract></ReturnValue>
+			<Anchor>//api/name/sharedManager</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPZoneMessageManager/setMessages:</TokenIdentifier>
+			<Abstract type="html">All messages that currently reside on the device.</Abstract>
+			<DeclaredIn>PWLPZoneMessageManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *messages</Declaration>
+			
+			<ReturnValue><Abstract type="html">All messages that currently reside on the device.</Abstract></ReturnValue>
+			<Anchor>//api/name/messages</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPZoneMessageManager/messages</TokenIdentifier>
+			<Abstract type="html">All messages that currently reside on the device.</Abstract>
+			<DeclaredIn>PWLPZoneMessageManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *messages</Declaration>
+			
+			<ReturnValue><Abstract type="html">All messages that currently reside on the device.</Abstract></ReturnValue>
+			<Anchor>//api/name/messages</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWLPZoneMessageManager/messages</TokenIdentifier>
+			<Abstract type="html">All messages that currently reside on the device.</Abstract>
+			<DeclaredIn>PWLPZoneMessageManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *messages</Declaration>
+			
+			<ReturnValue><Abstract type="html">All messages that currently reside on the device.</Abstract></ReturnValue>
+			<Anchor>//api/name/messages</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPZoneMessageManager/setDelegate:</TokenIdentifier>
+			<Abstract type="html">The PWLPZoneMessageManagerDelegate protocol defines the methods used to receive message updates from a PWLPZoneMessageManager object.</Abstract>
+			<DeclaredIn>PWLPZoneMessageManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;PWLPZoneMessageManagerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPZoneMessageManager/delegate</TokenIdentifier>
+			<Abstract type="html">The PWLPZoneMessageManagerDelegate protocol defines the methods used to receive message updates from a PWLPZoneMessageManager object.</Abstract>
+			<DeclaredIn>PWLPZoneMessageManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;PWLPZoneMessageManagerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWLPZoneMessageManager/delegate</TokenIdentifier>
+			<Abstract type="html">The PWLPZoneMessageManagerDelegate protocol defines the methods used to receive message updates from a PWLPZoneMessageManager object.</Abstract>
+			<DeclaredIn>PWLPZoneMessageManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;PWLPZoneMessageManagerDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPZoneMessageManager/parseMessageIdentifier:</TokenIdentifier>
+			<Abstract type="html">Parses message identifiers from the dictionary of launchOptions&apos; or userInfo&apos;.</Abstract>
+			<DeclaredIn>PWLPZoneMessageManager.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)parseMessageIdentifier:(NSDictionary *)dictionary</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dictionary</Name>
+					<Abstract type="html">A dictionary passed from application:didFinishLaunchingWithOptions:, application:didReceiveLocalNotification: or application:didReceiveRemoteNotification: of UIApplicationDelegate.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A message identifier.</Abstract></ReturnValue>
+			<Anchor>//api/name/parseMessageIdentifier:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPZoneMessageManager/fetchMessageWithIdentifier:completion:</TokenIdentifier>
+			<Abstract type="html">Fetches a message by message identifier.</Abstract>
+			<DeclaredIn>PWLPZoneMessageManager.h</DeclaredIn>
+			
+			<Declaration>- (void)fetchMessageWithIdentifier:(NSString *)identifier completion:(PWLPFetchMessageBlock)completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>identifier</Name>
+					<Abstract type="html">The identifier of the message to fetch.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A block that will be executed when the fecth is complete.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchMessageWithIdentifier:completion:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPZoneMessageManager/deleteMessage:completion:</TokenIdentifier>
+			<Abstract type="html">Deletes a message by message identifier.</Abstract>
+			<DeclaredIn>PWLPZoneMessageManager.h</DeclaredIn>
+			
+			<Declaration>- (void)deleteMessage:(NSString *)identifier completion:(void ( ^ ) ( NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>identifier</Name>
+					<Abstract type="html">The identifier of the message to delete.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A block that will be executed when the deletion is complete.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deleteMessage:completion:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPZoneMessageManager/readMessage:completion:</TokenIdentifier>
+			<Abstract type="html">Marks a message as read by message identifier.</Abstract>
+			<DeclaredIn>PWLPZoneMessageManager.h</DeclaredIn>
+			
+			<Declaration>- (void)readMessage:(NSString *)identifier completion:(void ( ^ ) ( NSError *error ))completion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>identifier</Name>
+					<Abstract type="html">The identifier of the message to mark as read.</Abstract>
+				</Parameter><Parameter>
+					<Name>completion</Name>
+					<Abstract type="html">A block that will be executed when the message is marked as read.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/readMessage:completion:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PWLPConfiguration.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PWLPConfiguration</TokenIdentifier>
+			<Abstract type="html">Determines how the Location Marketing SDK is configured.</Abstract>
+			<DeclaredIn>PWLPConfiguration.h</DeclaredIn>
+            
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPConfiguration/setBrand:</TokenIdentifier>
+			<Abstract type="html">The name of the brand or organization.</Abstract>
+			<DeclaredIn>PWLPConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *brand</Declaration>
+			
+			
+			<Anchor>//api/name/brand</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPConfiguration/brand</TokenIdentifier>
+			<Abstract type="html">The name of the brand or organization.</Abstract>
+			<DeclaredIn>PWLPConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *brand</Declaration>
+			
+			
+			<Anchor>//api/name/brand</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWLPConfiguration/brand</TokenIdentifier>
+			<Abstract type="html">The name of the brand or organization.</Abstract>
+			<DeclaredIn>PWLPConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *brand</Declaration>
+			
+			
+			<Anchor>//api/name/brand</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPConfiguration/setEnvironment:</TokenIdentifier>
+			<Abstract type="html">The environment where the SDK will execute. (sandbox,api,etc.)</Abstract>
+			<DeclaredIn>PWLPConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *environment</Declaration>
+			
+			
+			<Anchor>//api/name/environment</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPConfiguration/environment</TokenIdentifier>
+			<Abstract type="html">The environment where the SDK will execute. (sandbox,api,etc.)</Abstract>
+			<DeclaredIn>PWLPConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *environment</Declaration>
+			
+			
+			<Anchor>//api/name/environment</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWLPConfiguration/environment</TokenIdentifier>
+			<Abstract type="html">The environment where the SDK will execute. (sandbox,api,etc.)</Abstract>
+			<DeclaredIn>PWLPConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *environment</Declaration>
+			
+			
+			<Anchor>//api/name/environment</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPConfiguration/setIdentifier:</TokenIdentifier>
+			<Abstract type="html">The identifier string that corresponds to the brand and environment.</Abstract>
+			<DeclaredIn>PWLPConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *identifier</Declaration>
+			
+			
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPConfiguration/identifier</TokenIdentifier>
+			<Abstract type="html">The identifier string that corresponds to the brand and environment.</Abstract>
+			<DeclaredIn>PWLPConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *identifier</Declaration>
+			
+			
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PWLPConfiguration/identifier</TokenIdentifier>
+			<Abstract type="html">The identifier string that corresponds to the brand and environment.</Abstract>
+			<DeclaredIn>PWLPConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *identifier</Declaration>
+			
+			
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PWLPConfiguration/init</TokenIdentifier>
+			<Abstract type="html">Unavailable initializer.
+@return</Abstract>
+			<DeclaredIn>PWLPConfiguration.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWLPConfiguration/useConfiguration:</TokenIdentifier>
+			<Abstract type="html">Indicates the Location Marketing SDK that a new configuration should be used.</Abstract>
+			<DeclaredIn>PWLPConfiguration.h</DeclaredIn>
+			
+			<Declaration>+ (void)useConfiguration:(PWLPConfiguration *)configuration</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>configuration</Name>
+					<Abstract type="html">The new configuration to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/useConfiguration:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWLPConfiguration/currentConfiguration</TokenIdentifier>
+			<Abstract type="html">The configuration currently used by the Location Marketing SDK.</Abstract>
+			<DeclaredIn>PWLPConfiguration.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)currentConfiguration</Declaration>
+			
+			<ReturnValue><Abstract type="html">The currently used configuration object.</Abstract></ReturnValue>
+			<Anchor>//api/name/currentConfiguration</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWLPConfiguration/defaultConfiguration</TokenIdentifier>
+			<Abstract type="html">Convenience constructor for a configuration object that pulls the configuration information from the Info.plist file.</Abstract>
+			<DeclaredIn>PWLPConfiguration.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)defaultConfiguration</Declaration>
+			
+			<ReturnValue><Abstract type="html">An initialized configuration object.</Abstract></ReturnValue>
+			<Anchor>//api/name/defaultConfiguration</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PWLPConfiguration/configurationWithBrand:environment:identifier:</TokenIdentifier>
+			<Abstract type="html">Convenience constructor that creates and initializes a configuration object with a brand, enviroment and identifier.</Abstract>
+			<DeclaredIn>PWLPConfiguration.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)configurationWithBrand:(NSString *)brand environment:(NSString *)environment identifier:(NSString *)identifier</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>brand</Name>
+					<Abstract type="html">The brand or organization name</Abstract>
+				</Parameter><Parameter>
+					<Name>environment</Name>
+					<Abstract type="html">The environment where the SDK will execute.</Abstract>
+				</Parameter><Parameter>
+					<Name>identifier</Name>
+					<Abstract type="html">A identifier string that corresponds to the brand and environment.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized configuration object.</Abstract></ReturnValue>
+			<Anchor>//api/name/configurationWithBrand:environment:identifier:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
