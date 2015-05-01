@@ -13,10 +13,6 @@ Pod::Spec.new do |s|
   s.public_header_files = 'Framework/PWLocalpoint.framework/Versions/A/Headers/*.h'
   s.ios.vendored_frameworks = 'Framework/PWLocalpoint.framework'
   s.dependency 'PWCore' 
-  s.dependency 'AFNetworking'
-  s.dependency 'FMDB/SQLCipher'
-  s.dependency 'PWLogger'
-  s.dependency 'PW_Shared'
 
   s.xcconfig      = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/PWLocalpoint/**"'}
   s.ios.frameworks = 'Security', 'QuartzCore', 'SystemConfiguration', 'MobileCoreServices', 'CoreTelephony'
