@@ -18,5 +18,4 @@ DerivedData
 *.xccheckout
 
 #CocoaPods
-*/Pods
-*/PWLMSample.xcworkspace/*
+Pods
