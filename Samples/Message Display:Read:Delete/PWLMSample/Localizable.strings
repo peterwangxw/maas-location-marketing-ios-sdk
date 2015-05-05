@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  PWLMSample
+
+  Created by Xiangwei Wang on 5/5/15.
+  Copyright (c) 2015 Phunware Inc. All rights reserved.
+*/
+
+"CustomLocalNotificationPrefix" = "Welcome. %@";
+"RemindOfEnablePushNotificationSettings" = "To make sure you can receive notifications, please enable push notification setting by 'Setting > Notification'";

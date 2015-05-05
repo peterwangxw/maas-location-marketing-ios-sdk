@@ -1,0 +1,25 @@
+PODS:
+  - MBProgressHUD (0.9.1)
+  - PWCore (1.3.2)
+  - PWLocalpoint (3.0):
+    - PWCore
+
+DEPENDENCIES:
+  - MBProgressHUD
+  - PWLocalpoint (from `git@github.com:xwang-phunware/maas-location-marketing-ios-sdk.git`)
+
+EXTERNAL SOURCES:
+  PWLocalpoint:
+    :git: git@github.com:xwang-phunware/maas-location-marketing-ios-sdk.git
+
+CHECKOUT OPTIONS:
+  PWLocalpoint:
+    :commit: 0f0df36b2b7ca3a7f2831f50f0467203a15ecfee
+    :git: git@github.com:xwang-phunware/maas-location-marketing-ios-sdk.git
+
+SPEC CHECKSUMS:
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  PWCore: d9d4bb18ddeba4f6bc00c0936a262cb8fde7b111
+  PWLocalpoint: f8afda8b8652fc8e5cf31e1c0c6db9bf6b12427c
+
+COCOAPODS: 0.35.0
