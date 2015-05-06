@@ -9,6 +9,7 @@
 #import <PWLocalpoint/PWLocalpoint.h>
 
 #import "LPZoneEventListener.h"
+#import "PWBeaconManager.h"
 #import "PubUtils.h"
 
 @interface LPZoneEventListener()
@@ -75,6 +76,7 @@
     id<PWLPZone> zone = [self getZoneFromNotification:notification];
     if (zone) {
         // You shoud customize the code here to do what you need to do.
+        [[PWBeaconManager sharedManager] startMonitorBeaconsInGeofence:[zone identifier]];
         [PubUtils toast:[NSString stringWithFormat:@"Enter (ID: %@, name: %@)", zone.identifier, zone.name]];
     }
 }
@@ -87,6 +89,7 @@
     id<PWLPZone> zone = [self getZoneFromNotification:notification];
     if (zone) {
         // You shoud customize the code here to do what you need to do.
+        [[PWBeaconManager sharedManager] stopMonitorBeaconsInGeofence:[zone identifier]];
         [PubUtils toast:[NSString stringWithFormat:@"Exit (ID: %@, name: %@)", zone.identifier, zone.name]];
     }
 }

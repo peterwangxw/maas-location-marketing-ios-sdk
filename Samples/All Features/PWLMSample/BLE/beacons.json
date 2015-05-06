@@ -1,0 +1,218 @@
+ [
+  {
+  "name": "name goes here",
+  "store": "Gerry's Desk New",
+  "geofenceId": "LP_BLE_52683",
+  "outreachGeofenceId": "456",
+  "proximity": 2,
+  "beacon": {
+  "uuid": "8DEEFBB9-F738-4297-8040-96668BB44281",
+  "major": 1,
+  "minor": 3638
+  }
+  },
+  {
+  "name": "Beacon #1",
+  "store": "Senion Beacon",
+  "geofenceId": "LP_BLE_51685",
+  "outreachGeofenceId": "51691",
+  "proximity": 2,
+  "beacon": {
+  "uuid": "6e42f68a-d0d1-467ba-a23e-9d11fa746e43",
+  "major": 3046,
+  "minor": 528
+  }
+  },
+  {
+  "name": "Beacon #2",
+  "store": "Gerry's Desk",
+  "geofenceId": "LP_BLE_51685",
+  "outreachGeofenceId": "51687",
+  "proximity": 2,
+  "beacon": {
+  "uuid": "1DBF9F72-FD11-B00C-C14B-D544F3323D72",
+  "major": 57710,
+  "minor": 1273
+  }
+  },
+  {
+  "name": "Beacon #3",
+  "store": "Illyas Desk",
+  "geofenceId": "LP_BLE_123456",
+  "outreachGeofenceId": "52673",
+  "proximity": 2,
+  "beacon": {
+  "uuid": "6e42f68a-d0d1-467b-a23e-9d11fa746e43",
+  "major": 2089,
+  "minor": 0
+  }
+  },
+  {
+  "name": "Beacon #4",
+  "store": "TBD",
+  "geofenceId": "LP_BLE_52683",
+  "outreachGeofenceId": "456",
+  "proximity": 2,
+  "beacon": {
+  "uuid": "B6732C37-6D34-56C2-BEBD-BC54778C3534",
+  "major": 59261,
+  "minor": 35340
+  }
+  },
+  {
+  "name": "Beacon #5",
+  "store": "TBD",
+  "geofenceId": "LP_BLE_52683",
+  "outreachGeofenceId": "456",
+  "proximity": 2,
+  "beacon": {
+  "uuid": "B6732C37-6D34-56C2-BEBD-BC54778C3534",
+  "major": 28226,
+  "minor": 42004
+  }
+  },
+  {
+  "name": "Beacon #6",
+  "store": "TBD",
+  "geofenceId": "LP_BLE_52683",
+  "outreachGeofenceId": "456",
+  "proximity": 2,
+  "beacon": {
+  "uuid": "B6732C37-6D34-56C2-BEBD-BC54778C3534",
+  "major": 10157,
+  "minor": 53785
+  }
+  },
+  {
+  "name": "Beacon #7",
+  "store": "TBD",
+  "geofenceId": "LP_BLE_52683",
+  "outreachGeofenceId": "456",
+  "proximity": 2,
+  "beacon": {
+  "uuid": "B6732C37-6D34-56C2-BEBD-BC54778C3534",
+  "major": 34349,
+  "minor": 45021
+  }
+  },
+  {
+  "name": "Beacon #8",
+  "store": "TBD",
+  "geofenceId": "LP_BLE_52683",
+  "outreachGeofenceId": "456",
+  "proximity": 2,
+  "beacon": {
+  "uuid": "B6732C37-6D34-56C2-BEBD-BC54778C3534",
+  "major": 22277,
+  "minor": 62889
+  }
+  },
+  {
+  "name": "Beacon #9",
+  "store": "TBD",
+  "geofenceId": "LP_BLE_52683",
+  "outreachGeofenceId": "456",
+  "proximity": 2,
+  "beacon": {
+  "uuid": "B6732C37-6D34-56C2-BEBD-BC54778C3534",
+  "major": 47944,
+  "minor": 41904
+  }
+  },
+  {
+  "name": "Beacon #10",
+  "store": "TBD",
+  "geofenceId": "LP_BLE_52683",
+  "outreachGeofenceId": "456",
+  "proximity": 2,
+  "beacon": {
+  "uuid": "B6732C37-6D34-56C2-BEBD-BC54778C3534",
+  "major": 26051,
+  "minor": 20760
+  }
+  },
+  {
+  "name": "Beacon #11",
+  "store": "TBD",
+  "geofenceId": "LP_BLE_52683",
+  "outreachGeofenceId": "456",
+  "proximity": 2,
+  "beacon": {
+  "uuid": "B6732C37-6D34-56C2-BEBD-BC54778C3534",
+  "major": 57598,
+  "minor": 48592
+  }
+  },
+  {
+  "name": "Beacon #12",
+  "store": "TBD",
+  "geofenceId": "LP_BLE_52683",
+  "outreachGeofenceId": "456",
+  "proximity": 2,
+  "beacon": {
+  "uuid": "B6732C37-6D34-56C2-BEBD-BC54778C3534",
+  "major": 10300,
+  "minor": 59217
+  }
+  },
+  {
+  "name": "Beacon #13",
+  "store": "TBD",
+  "geofenceId": "LP_BLE_52683",
+  "outreachGeofenceId": "456",
+  "proximity": 2,
+  "beacon": {
+  "uuid": "B6732C37-6D34-56C2-BEBD-BC54778C3534",
+  "major": 28373,
+  "minor": 8707
+  }
+  },
+  {
+  "name": "Beacon #14",
+  "store": "TBD",
+  "geofenceId": "LP_BLE_52683",
+  "outreachGeofenceId": "456",
+  "proximity": 2,
+  "beacon": {
+  "uuid": "B6732C37-6D34-56C2-BEBD-BC54778C3534",
+  "major": 6938,
+  "minor": 23471
+  }
+  },
+  {
+  "name": "Beacon #15",
+  "store": "TBD",
+  "geofenceId": "LP_BLE_52683",
+  "outreachGeofenceId": "456",
+  "proximity": 2,
+  "beacon": {
+  "uuid": "B6732C37-6D34-56C2-BEBD-BC54778C3534",
+  "major": 58445,
+  "minor": 32601
+  }
+  },
+  {
+  "name": "Beacon #16",
+  "store": "TBD",
+  "geofenceId": "LP_BLE_52683",
+  "outreachGeofenceId": "456",
+  "proximity": 2,
+  "beacon": {
+  "uuid": "B6732C37-6D34-56C2-BEBD-BC54778C3534",
+  "major": 18365,
+  "minor": 29961
+  }
+  },
+  {
+  "name": "Beacon #17",
+  "store": "TBD",
+  "geofenceId": "LP_BLE_52683",
+  "outreachGeofenceId": "456",
+  "proximity": 2,
+  "beacon": {
+  "uuid": "B6732C37-6D34-56C2-BEBD-BC54778C3534",
+  "major": 18704,
+  "minor": 54447
+  }
+  }
+  ]
