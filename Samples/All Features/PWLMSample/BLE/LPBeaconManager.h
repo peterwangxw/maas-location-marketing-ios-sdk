@@ -14,7 +14,7 @@ extern NSString * const kPWBeaconManagerDidExitRegionNotification;
 extern NSString * const kPWBeacon;
 extern NSString * const kPWRegion;
 
-@interface PWBeaconManager : NSObject
+@interface LPBeaconManager : NSObject
 
 @property (nonatomic, strong) NSArray *localBeacons;
 

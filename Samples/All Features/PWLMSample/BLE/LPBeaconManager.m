@@ -1,5 +1,5 @@
 //
-//  PWBeaconManager.m
+//  LPBeaconManager.m
 //  Localpoint
 //
 //  Created by Illya Busigin on 1/28/15.
@@ -7,7 +7,7 @@
 //
 
 #import <PWLocalpoint/PWLocalpoint.h>
-#import "PWBeaconManager.h"
+#import "LPBeaconManager.h"
 
 @import CoreLocation;
 
@@ -21,7 +21,7 @@ NSTimeInterval const PWFetchBeaconInterval = 60 * 60 * 24; // 1 day
 static int maxRequestInterval = 900;
 static NSDate *lastSendTime = nil;
 
-@interface PWBeaconManager () <CLLocationManagerDelegate>
+@interface LPBeaconManager () <CLLocationManagerDelegate>
 
 @property (nonatomic, strong) NSOperationQueue *operationQueue;
 @property (nonatomic, strong) CLLocationManager *locationManager;
@@ -29,13 +29,13 @@ static NSDate *lastSendTime = nil;
 
 @end
 
-@implementation PWBeaconManager
+@implementation LPBeaconManager
 
 #pragma mark - NSObject
 
 + (void)load {
     // Instantiate the singleton
-    [PWBeaconManager sharedManager];
+    [LPBeaconManager sharedManager];
 }
 
 - (instancetype)init {
@@ -67,11 +67,11 @@ static NSDate *lastSendTime = nil;
 #pragma mark - Singleton
 
 + (instancetype)sharedManager {
-    static PWBeaconManager *sharedManager = nil;
+    static LPBeaconManager *sharedManager = nil;
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        sharedManager = [PWBeaconManager new];
+        sharedManager = [LPBeaconManager new];
     });
     
     return sharedManager;

@@ -31,7 +31,7 @@
 		9D1DD0751AF94B3800BD1A91 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D1DD0741AF94B3800BD1A91 /* Localizable.strings */; };
 		9D642FCF1AFAA93C00802EDC /* beacons.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D642FCA1AFAA93C00802EDC /* beacons.json */; };
 		9D642FD01AFAA93C00802EDC /* LPBeaconZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D642FCC1AFAA93C00802EDC /* LPBeaconZone.m */; };
-		9D642FD11AFAA93C00802EDC /* PWBeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D642FCE1AFAA93C00802EDC /* PWBeaconManager.m */; };
+		9D642FD11AFAA93C00802EDC /* LPBeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D642FCE1AFAA93C00802EDC /* LPBeaconManager.m */; };
 		B069F5F74A3475C67B67A9D0 /* libPods-PWLMSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC7B47AA60EB8D085F0772B /* libPods-PWLMSample.a */; };
 /* End PBXBuildFile section */
 
@@ -98,8 +98,8 @@
 		9D642FCA1AFAA93C00802EDC /* beacons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = beacons.json; path = BLE/beacons.json; sourceTree = "<group>"; };
 		9D642FCB1AFAA93C00802EDC /* LPBeaconZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LPBeaconZone.h; path = BLE/LPBeaconZone.h; sourceTree = "<group>"; };
 		9D642FCC1AFAA93C00802EDC /* LPBeaconZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LPBeaconZone.m; path = BLE/LPBeaconZone.m; sourceTree = "<group>"; };
-		9D642FCD1AFAA93C00802EDC /* PWBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWBeaconManager.h; path = BLE/PWBeaconManager.h; sourceTree = "<group>"; };
-		9D642FCE1AFAA93C00802EDC /* PWBeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWBeaconManager.m; path = BLE/PWBeaconManager.m; sourceTree = "<group>"; };
+		9D642FCD1AFAA93C00802EDC /* LPBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LPBeaconManager.h; path = BLE/LPBeaconManager.h; sourceTree = "<group>"; };
+		9D642FCE1AFAA93C00802EDC /* LPBeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LPBeaconManager.m; path = BLE/LPBeaconManager.m; sourceTree = "<group>"; };
 		9DB02E4B1AEAB51900E8C894 /* PWLocalpoint.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PWLocalpoint.framework; path = PWLMSample/PWLocalpoint.framework; sourceTree = "<group>"; };
 		A0A5398C738E9D466980292B /* Pods-PWLMSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PWLMSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PWLMSample/Pods-PWLMSample.debug.xcconfig"; sourceTree = "<group>"; };
 		AFB6D0FA2DA850F461C5B090 /* libPods-PWLMSampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PWLMSampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -288,8 +288,8 @@
 				9D642FCA1AFAA93C00802EDC /* beacons.json */,
 				9D642FCB1AFAA93C00802EDC /* LPBeaconZone.h */,
 				9D642FCC1AFAA93C00802EDC /* LPBeaconZone.m */,
-				9D642FCD1AFAA93C00802EDC /* PWBeaconManager.h */,
-				9D642FCE1AFAA93C00802EDC /* PWBeaconManager.m */,
+				9D642FCD1AFAA93C00802EDC /* LPBeaconManager.h */,
+				9D642FCE1AFAA93C00802EDC /* LPBeaconManager.m */,
 			);
 			name = BLE;
 			sourceTree = "<group>";
@@ -479,7 +479,7 @@
 				9D16A8001AE848DC00CADC97 /* LPUIAlertView.m in Sources */,
 				9D16A7E81AE8486F00CADC97 /* MessagesManager.m in Sources */,
 				9D0A2B991AE842FD004B7579 /* main.m in Sources */,
-				9D642FD11AFAA93C00802EDC /* PWBeaconManager.m in Sources */,
+				9D642FD11AFAA93C00802EDC /* LPBeaconManager.m in Sources */,
 				9D16A7E91AE8486F00CADC97 /* MessagesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
