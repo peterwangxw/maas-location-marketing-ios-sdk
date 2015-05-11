@@ -8,7 +8,6 @@
 
 #import "PubUtils.h"
 #import "MBProgressHUD.h"
-#import "SampleDefines.h"
 
 @implementation PubUtils {
     UIView *topMostView;
@@ -59,16 +58,16 @@
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
                                                     message:[error description]
                                                    delegate:nil
-                                          cancelButtonTitle:AlertOKButtonName
+                                          cancelButtonTitle:@"OK"
                                           otherButtonTitles:nil, nil];
     [alert show];
 }
 
 + (void)displayWarning:(NSString*)message {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:AlertViewTitleWarning
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Warning"
                                                     message:message
                                                    delegate:nil
-                                          cancelButtonTitle:AlertOKButtonName
+                                          cancelButtonTitle:@"OK"
                                           otherButtonTitles:nil, nil];
     [alert show];
 }

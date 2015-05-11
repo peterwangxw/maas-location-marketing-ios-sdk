@@ -13,8 +13,6 @@
 #import "MessagesTableViewController.h"
 #import "MessageDetailViewController.h"
 // Commons
-#import "SampleDefines.h"
-#import "LPUIAlertView.h"
 #import "PubUtils.h"
 
 @implementation AppDelegate

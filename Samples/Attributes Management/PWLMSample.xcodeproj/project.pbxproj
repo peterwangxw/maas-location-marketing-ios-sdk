@@ -17,7 +17,6 @@
 		9D16A7F21AE8487A00CADC97 /* AttributeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D16A7EB1AE8487A00CADC97 /* AttributeTableViewCell.m */; };
 		9D16A7F41AE8487A00CADC97 /* AttributeTableViewTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D16A7ED1AE8487A00CADC97 /* AttributeTableViewTextFieldCell.xib */; };
 		9D16A7F61AE8487A00CADC97 /* UserAttributeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D16A7F11AE8487A00CADC97 /* UserAttributeViewController.m */; };
-		9D16A7FB1AE848D000CADC97 /* SampleDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D16A7FA1AE848D000CADC97 /* SampleDefines.m */; };
 		9D16A8011AE848DC00CADC97 /* PubUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D16A7FF1AE848DC00CADC97 /* PubUtils.m */; };
 		9D1B2F361AF154EC001EA843 /* AppInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B2F341AF154EC001EA843 /* AppInfoViewController.m */; };
 		9D1B2F481AF15624001EA843 /* ProfileAttributeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B2F451AF15624001EA843 /* ProfileAttributeTableViewController.m */; };
@@ -56,8 +55,6 @@
 		9D16A7ED1AE8487A00CADC97 /* AttributeTableViewTextFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AttributeTableViewTextFieldCell.xib; path = Attributes/AttributeTableViewTextFieldCell.xib; sourceTree = "<group>"; };
 		9D16A7F01AE8487A00CADC97 /* UserAttributeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserAttributeViewController.h; path = Attributes/UserAttributeViewController.h; sourceTree = "<group>"; };
 		9D16A7F11AE8487A00CADC97 /* UserAttributeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserAttributeViewController.m; path = Attributes/UserAttributeViewController.m; sourceTree = "<group>"; };
-		9D16A7F91AE848D000CADC97 /* SampleDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleDefines.h; path = Misc/SampleDefines.h; sourceTree = "<group>"; };
-		9D16A7FA1AE848D000CADC97 /* SampleDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SampleDefines.m; path = Misc/SampleDefines.m; sourceTree = "<group>"; };
 		9D16A7FE1AE848DC00CADC97 /* PubUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PubUtils.h; path = Utils/PubUtils.h; sourceTree = "<group>"; };
 		9D16A7FF1AE848DC00CADC97 /* PubUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PubUtils.m; path = Utils/PubUtils.m; sourceTree = "<group>"; };
 		9D16A83A1AE85AC400CADC97 /* libPods-PWLMSample-AFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-PWLMSample-AFNetworking.a"; path = "Pods/build/Debug-iphoneos/libPods-PWLMSample-AFNetworking.a"; sourceTree = "<group>"; };
@@ -151,7 +148,6 @@
 		9D0A2B951AE842FD004B7579 /* PWLMSample */ = {
 			isa = PBXGroup;
 			children = (
-				9D16A7F81AE848C000CADC97 /* Misc */,
 				9D16A7F71AE848B600CADC97 /* Utils */,
 				9D16A7DF1AE8485400CADC97 /* Attributes */,
 				9D0A2B9A1AE842FD004B7579 /* AppDelegate.h */,
@@ -216,15 +212,6 @@
 				9D16A7FF1AE848DC00CADC97 /* PubUtils.m */,
 			);
 			name = Utils;
-			sourceTree = "<group>";
-		};
-		9D16A7F81AE848C000CADC97 /* Misc */ = {
-			isa = PBXGroup;
-			children = (
-				9D16A7F91AE848D000CADC97 /* SampleDefines.h */,
-				9D16A7FA1AE848D000CADC97 /* SampleDefines.m */,
-			);
-			name = Misc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,7 +389,6 @@
 				9D1B2F491AF15624001EA843 /* ProfileAttributeValuesTableViewController.m in Sources */,
 				9D16A8011AE848DC00CADC97 /* PubUtils.m in Sources */,
 				9D0A2B9C1AE842FD004B7579 /* AppDelegate.m in Sources */,
-				9D16A7FB1AE848D000CADC97 /* SampleDefines.m in Sources */,
 				9D1B2F361AF154EC001EA843 /* AppInfoViewController.m in Sources */,
 				9D0A2B991AE842FD004B7579 /* main.m in Sources */,
 			);

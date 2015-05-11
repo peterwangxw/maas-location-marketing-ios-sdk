@@ -10,7 +10,6 @@
 
 #import "UserAttributeViewController.h"
 #import "AttributeTableViewCell.h"
-#import "SampleDefines.h"
 #import "PubUtils.h"
 
 static NSString *const AttributeTableViewCellNibName = @"AttributeTableViewTextFieldCell";
@@ -36,7 +35,7 @@ static NSString *const CustomIDInvalid = @"Please make sure you have provided va
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    self.attributes = @{CustomIdentifierName:EmptyString};
+    self.attributes = @{CustomIdentifierName:@""};
     [self.tableView reloadData];
     
     // Fetch custom identifer
@@ -49,7 +48,7 @@ static NSString *const CustomIDInvalid = @"Please make sure you have provided va
             } else {
                 // Set the custom identifier
                 AttributeTableViewCell *cell = [self.tableView visibleCells].firstObject;
-                cell.value.text = identifier?:EmptyString;
+                cell.value.text = identifier?:@"";
             }
         });
     }];
@@ -64,7 +63,7 @@ static NSString *const CustomIDInvalid = @"Please make sure you have provided va
     AttributeTableViewCell *cell = [self.tableView visibleCells].firstObject;
     [cell.value resignFirstResponder];
     NSString *customId = cell.value.text;
-    if (!customId || [customId stringByReplacingOccurrencesOfString:BlankString withString:EmptyString].length == 0) {
+    if (!customId || [customId stringByReplacingOccurrencesOfString:@" " withString:@""].length == 0) {
         // Save it only when it's valid
         [PubUtils displayWarning:CustomIDInvalid];
     } else {

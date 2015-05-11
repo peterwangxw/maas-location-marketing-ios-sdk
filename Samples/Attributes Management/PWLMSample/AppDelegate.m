@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 // Commons
-#import "SampleDefines.h"
 #import "PubUtils.h"
 
 @implementation AppDelegate

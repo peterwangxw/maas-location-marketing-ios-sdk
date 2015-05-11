@@ -9,6 +9,7 @@
 #import <PWLocalpoint/PWLocalpoint.h>
 
 #import "LPZoneEventListener.h"
+#import "LPCustomGeoZoneManager.h"
 #import "PubUtils.h"
 
 @interface LPZoneEventListener()
@@ -73,10 +74,9 @@
  */
 - (void)didEnterZoneNotification:(NSNotification*)notification {
     id<PWLPZone> zone = [self getZoneFromNotification:notification];
-    if (zone) {
-        // You shoud customize the code here to do what you need to do.
-        [PubUtils toast:[NSString stringWithFormat:@"Enter (ID: %@, name: %@)", zone.identifier, zone.name]];
-    }
+    NSLog(@"Entered: %@", zone);
+    
+    // To do something as you need
 }
 
 /**
@@ -85,10 +85,9 @@
  */
 - (void)didExitZoneNotification:(NSNotification*)notification {
     id<PWLPZone> zone = [self getZoneFromNotification:notification];
-    if (zone) {
-        // You shoud customize the code here to do what you need to do.
-        [PubUtils toast:[NSString stringWithFormat:@"Exit (ID: %@, name: %@)", zone.identifier, zone.name]];
-    }
+    NSLog(@"Exited: %@", zone);
+    
+    // To do something as you need
 }
 
 /**
@@ -97,10 +96,9 @@
  */
 - (void)didCheckInForZoneNotification:(NSNotification*)notification {
     id<PWLPZone> zone = [self getZoneFromNotification:notification];
-    if (zone) {
-        // You shoud customize the code here to do what you need to do.
-        [PubUtils toast:[NSString stringWithFormat:@"Checkin (ID: %@, name: %@)", zone.identifier, zone.name]];
-    }
+    NSLog(@"Checkin: %@", zone);
+    
+    // To do something as you need
 }
 
 /**
@@ -110,10 +108,9 @@
 - (void)didFailCheckInForZoneNotification:(NSNotification*)notification {
     id<PWLPZone> zone = [self getZoneFromNotification:notification];
     NSError *error = notification.userInfo[PWLPZoneManagerNotificationErrorKey];
-    if (zone) {
-        // You shoud customize the code here to do what you need to do.
-        [PubUtils toast:[NSString stringWithFormat:@"Failed checkin (ID: %@, name: %@) with error: %@", zone.identifier, zone.name, [error description]]];
-    }
+    NSLog(@"Failed checkin: %@ with error: %@", zone, error);
+    
+    // To do something as you need
 }
 
 /**
@@ -122,9 +119,9 @@
  */
 - (void)didAddZonesNotification:(NSNotification*)notification {
     NSArray *identifierArray =  notification.userInfo[PWLPZoneManagerNotificationZoneIdentifiersArrayKey];
-    if (identifierArray.count > 0) {
-        [PubUtils toast:[NSString stringWithFormat:@"Add zones: %@", [identifierArray description]]];
-    }
+    NSLog(@"Added: %@", identifierArray);
+    
+    // To do something as you need
 }
 
 /**
@@ -133,9 +130,9 @@
  */
 - (void)didDeleteZonesNotification:(NSNotification*)notification {
     NSArray *identifierArray =  notification.userInfo[PWLPZoneManagerNotificationZoneIdentifiersArrayKey];
-    if (identifierArray.count > 0) {
-        [PubUtils toast:[NSString stringWithFormat:@"Delete zones: %@", [identifierArray description]]];
-    }
+    NSLog(@"Deleted: %@", identifierArray);
+    
+    // To do something as you need
 }
 
 /**
@@ -144,9 +141,9 @@
  */
 - (void)didModifyZonesNotification:(NSNotification*)notification {
     NSArray *identifierArray =  notification.userInfo[PWLPZoneManagerNotificationZoneIdentifiersArrayKey];
-    if (identifierArray.count > 0) {
-        [PubUtils toast:[NSString stringWithFormat:@"Modify zones: %@", [identifierArray description]]];
-    }
+    NSLog(@"Modified: %@", identifierArray);
+    
+    // To do something as you need
 }
 
 /**
@@ -196,7 +193,7 @@
  Get the geo zone manager
  */
 - (id<PWLPZoneManager>)getPWLPGeoZoneManager {
-    return [PWLPGeoZoneManager new];
+    return [LPCustomGeoZoneManager sharedManager];
 }
 
 - (void)dealloc {

@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 
 // Commons
-#import "SampleDefines.h"
 #import "LPUIAlertView.h"
 
 @implementation AppDelegate
@@ -71,11 +70,11 @@
         NSString *messageId = [[PWLPZoneMessageManager sharedManager] parseMessageIdentifier:notification.userInfo];
         if (messageId) {
             // Display 'OK' and 'View' button on the alert view if there is message related
-            cancelButton = AlertOKButtonName;
-            viewButton = AlertViewButtonName;
+            cancelButton = @"OK";
+            viewButton = @"View";
         } else {
             // Or else just display an 'OK' button
-            cancelButton = AlertOKButtonName;
+            cancelButton = @"OK";
             viewButton = nil;
         }
         

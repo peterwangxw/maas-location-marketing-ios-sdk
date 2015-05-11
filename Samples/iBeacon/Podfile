@@ -1,0 +1,11 @@
+platform :ios, '7.0'
+xcodeproj 'PWLMSample.xcodeproj'
+
+target :PWLMSample, :exclusive => true do
+    pod 'MBProgressHUD'
+    pod 'PWLocalpoint', :git => 'git@github.com:xwang-phunware/maas-location-marketing-ios-sdk.git'
+end
+
+target :PWLMSampleTests, :exclusive => true do
+    pod 'PWLocalpoint', :git => 'git@github.com:xwang-phunware/maas-location-marketing-ios-sdk.git'
+end

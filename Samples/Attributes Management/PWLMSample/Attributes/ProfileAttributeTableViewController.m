@@ -11,7 +11,6 @@
 #import "ProfileAttributeTableViewController.h"
 #import "ProfileAttributeValuesTableViewController.h"
 #import "AttributeTableViewCell.h"
-#import "SampleDefines.h"
 #import "PubUtils.h"
 
 static NSString *const ProfileAttributeNameJSONKey = @"name";

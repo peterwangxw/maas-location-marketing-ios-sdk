@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "AppInfoViewController.h"
 
+/**
+ This is a class using for listen zone events.
+ */
 @interface LPZoneEventListener : NSObject
 
 /**

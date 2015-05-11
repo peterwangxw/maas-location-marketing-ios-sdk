@@ -14,12 +14,13 @@
 		9D0A2BA71AE842FD004B7579 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D0A2BA61AE842FD004B7579 /* Images.xcassets */; };
 		9D0A2BAA1AE842FD004B7579 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D0A2BA81AE842FD004B7579 /* LaunchScreen.xib */; };
 		9D0A2BB61AE842FD004B7579 /* PWLMSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0A2BB51AE842FD004B7579 /* PWLMSampleTests.m */; };
-		9D16A7FB1AE848D000CADC97 /* SampleDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D16A7FA1AE848D000CADC97 /* SampleDefines.m */; };
 		9D16A8011AE848DC00CADC97 /* PubUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D16A7FF1AE848DC00CADC97 /* PubUtils.m */; };
 		9D1B2F261AF14633001EA843 /* LPMessageListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B2F231AF14633001EA843 /* LPMessageListener.m */; };
 		9D1B2F271AF14633001EA843 /* LPZoneEventListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B2F251AF14633001EA843 /* LPZoneEventListener.m */; };
 		9D1B2F361AF154EC001EA843 /* AppInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B2F341AF154EC001EA843 /* AppInfoViewController.m */; };
 		9D1DD0751AF94B3800BD1A91 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D1DD0741AF94B3800BD1A91 /* Localizable.strings */; };
+		9D1EAE041B01261F00811D27 /* LPCustomGeoZoneManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1EAE011B01261F00811D27 /* LPCustomGeoZoneManager.m */; };
+		9D1EAE051B01261F00811D27 /* LPCustomProximityZoneManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1EAE031B01261F00811D27 /* LPCustomProximityZoneManager.m */; };
 		B069F5F74A3475C67B67A9D0 /* libPods-PWLMSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC7B47AA60EB8D085F0772B /* libPods-PWLMSample.a */; };
 /* End PBXBuildFile section */
 
@@ -48,8 +49,6 @@
 		9D0A2BAF1AE842FD004B7579 /* PWLMSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PWLMSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D0A2BB41AE842FD004B7579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D0A2BB51AE842FD004B7579 /* PWLMSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWLMSampleTests.m; sourceTree = "<group>"; };
-		9D16A7F91AE848D000CADC97 /* SampleDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleDefines.h; path = Misc/SampleDefines.h; sourceTree = "<group>"; };
-		9D16A7FA1AE848D000CADC97 /* SampleDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SampleDefines.m; path = Misc/SampleDefines.m; sourceTree = "<group>"; };
 		9D16A7FE1AE848DC00CADC97 /* PubUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PubUtils.h; path = Utils/PubUtils.h; sourceTree = "<group>"; };
 		9D16A7FF1AE848DC00CADC97 /* PubUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PubUtils.m; path = Utils/PubUtils.m; sourceTree = "<group>"; };
 		9D16A83A1AE85AC400CADC97 /* libPods-PWLMSample-AFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-PWLMSample-AFNetworking.a"; path = "Pods/build/Debug-iphoneos/libPods-PWLMSample-AFNetworking.a"; sourceTree = "<group>"; };
@@ -66,6 +65,10 @@
 		9D1B2F341AF154EC001EA843 /* AppInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInfoViewController.m; sourceTree = "<group>"; };
 		9D1B2F351AF154EC001EA843 /* AppInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInfoViewController.h; sourceTree = "<group>"; };
 		9D1DD0741AF94B3800BD1A91 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		9D1EAE001B01261F00811D27 /* LPCustomGeoZoneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LPCustomGeoZoneManager.h; path = Listeners/LPCustomGeoZoneManager.h; sourceTree = "<group>"; };
+		9D1EAE011B01261F00811D27 /* LPCustomGeoZoneManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LPCustomGeoZoneManager.m; path = Listeners/LPCustomGeoZoneManager.m; sourceTree = "<group>"; };
+		9D1EAE021B01261F00811D27 /* LPCustomProximityZoneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LPCustomProximityZoneManager.h; path = Listeners/LPCustomProximityZoneManager.h; sourceTree = "<group>"; };
+		9D1EAE031B01261F00811D27 /* LPCustomProximityZoneManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LPCustomProximityZoneManager.m; path = Listeners/LPCustomProximityZoneManager.m; sourceTree = "<group>"; };
 		9DB02E4B1AEAB51900E8C894 /* PWLocalpoint.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PWLocalpoint.framework; path = PWLMSample/PWLocalpoint.framework; sourceTree = "<group>"; };
 		A0A5398C738E9D466980292B /* Pods-PWLMSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PWLMSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PWLMSample/Pods-PWLMSample.debug.xcconfig"; sourceTree = "<group>"; };
 		AFB6D0FA2DA850F461C5B090 /* libPods-PWLMSampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PWLMSampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				9D1B2F211AF1461E001EA843 /* Listeners */,
-				9D16A7F81AE848C000CADC97 /* Misc */,
 				9D16A7F71AE848B600CADC97 /* Utils */,
 				9D0A2B9A1AE842FD004B7579 /* AppDelegate.h */,
 				9D0A2B9B1AE842FD004B7579 /* AppDelegate.m */,
@@ -194,18 +196,13 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
-		9D16A7F81AE848C000CADC97 /* Misc */ = {
-			isa = PBXGroup;
-			children = (
-				9D16A7F91AE848D000CADC97 /* SampleDefines.h */,
-				9D16A7FA1AE848D000CADC97 /* SampleDefines.m */,
-			);
-			name = Misc;
-			sourceTree = "<group>";
-		};
 		9D1B2F211AF1461E001EA843 /* Listeners */ = {
 			isa = PBXGroup;
 			children = (
+				9D1EAE001B01261F00811D27 /* LPCustomGeoZoneManager.h */,
+				9D1EAE011B01261F00811D27 /* LPCustomGeoZoneManager.m */,
+				9D1EAE021B01261F00811D27 /* LPCustomProximityZoneManager.h */,
+				9D1EAE031B01261F00811D27 /* LPCustomProximityZoneManager.m */,
 				9D1B2F221AF14633001EA843 /* LPMessageListener.h */,
 				9D1B2F231AF14633001EA843 /* LPMessageListener.m */,
 				9D1B2F241AF14633001EA843 /* LPZoneEventListener.h */,
@@ -385,10 +382,11 @@
 				9D1B2F261AF14633001EA843 /* LPMessageListener.m in Sources */,
 				9D16A8011AE848DC00CADC97 /* PubUtils.m in Sources */,
 				9D0A2B9C1AE842FD004B7579 /* AppDelegate.m in Sources */,
-				9D16A7FB1AE848D000CADC97 /* SampleDefines.m in Sources */,
 				9D1B2F271AF14633001EA843 /* LPZoneEventListener.m in Sources */,
+				9D1EAE051B01261F00811D27 /* LPCustomProximityZoneManager.m in Sources */,
 				9D1B2F361AF154EC001EA843 /* AppInfoViewController.m in Sources */,
 				9D0A2B991AE842FD004B7579 /* main.m in Sources */,
+				9D1EAE041B01261F00811D27 /* LPCustomGeoZoneManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

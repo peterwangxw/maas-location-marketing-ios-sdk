@@ -20,7 +20,6 @@
 		9D16A7F21AE8487A00CADC97 /* AttributeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D16A7EB1AE8487A00CADC97 /* AttributeTableViewCell.m */; };
 		9D16A7F41AE8487A00CADC97 /* AttributeTableViewTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D16A7ED1AE8487A00CADC97 /* AttributeTableViewTextFieldCell.xib */; };
 		9D16A7F61AE8487A00CADC97 /* UserAttributeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D16A7F11AE8487A00CADC97 /* UserAttributeViewController.m */; };
-		9D16A7FB1AE848D000CADC97 /* SampleDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D16A7FA1AE848D000CADC97 /* SampleDefines.m */; };
 		9D16A8001AE848DC00CADC97 /* LPUIAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D16A7FD1AE848DC00CADC97 /* LPUIAlertView.m */; };
 		9D16A8011AE848DC00CADC97 /* PubUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D16A7FF1AE848DC00CADC97 /* PubUtils.m */; };
 		9D1B2F261AF14633001EA843 /* LPMessageListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B2F231AF14633001EA843 /* LPMessageListener.m */; };
@@ -29,6 +28,8 @@
 		9D1B2F481AF15624001EA843 /* ProfileAttributeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B2F451AF15624001EA843 /* ProfileAttributeTableViewController.m */; };
 		9D1B2F491AF15624001EA843 /* ProfileAttributeValuesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B2F471AF15624001EA843 /* ProfileAttributeValuesTableViewController.m */; };
 		9D1DD0751AF94B3800BD1A91 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D1DD0741AF94B3800BD1A91 /* Localizable.strings */; };
+		9D1EADF31B010A1100811D27 /* LPCustomGeoZoneManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1EADF21B010A1100811D27 /* LPCustomGeoZoneManager.m */; };
+		9D1EADF91B011BB600811D27 /* LPCustomProximityZoneManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1EADF81B011BB600811D27 /* LPCustomProximityZoneManager.m */; };
 		9D642FCF1AFAA93C00802EDC /* beacons.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D642FCA1AFAA93C00802EDC /* beacons.json */; };
 		9D642FD01AFAA93C00802EDC /* LPBeaconZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D642FCC1AFAA93C00802EDC /* LPBeaconZone.m */; };
 		9D642FD11AFAA93C00802EDC /* LPBeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D642FCE1AFAA93C00802EDC /* LPBeaconManager.m */; };
@@ -71,8 +72,6 @@
 		9D16A7ED1AE8487A00CADC97 /* AttributeTableViewTextFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AttributeTableViewTextFieldCell.xib; path = Attributes/AttributeTableViewTextFieldCell.xib; sourceTree = "<group>"; };
 		9D16A7F01AE8487A00CADC97 /* UserAttributeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserAttributeViewController.h; path = Attributes/UserAttributeViewController.h; sourceTree = "<group>"; };
 		9D16A7F11AE8487A00CADC97 /* UserAttributeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserAttributeViewController.m; path = Attributes/UserAttributeViewController.m; sourceTree = "<group>"; };
-		9D16A7F91AE848D000CADC97 /* SampleDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleDefines.h; path = Misc/SampleDefines.h; sourceTree = "<group>"; };
-		9D16A7FA1AE848D000CADC97 /* SampleDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SampleDefines.m; path = Misc/SampleDefines.m; sourceTree = "<group>"; };
 		9D16A7FC1AE848DC00CADC97 /* LPUIAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LPUIAlertView.h; path = Utils/LPUIAlertView.h; sourceTree = "<group>"; };
 		9D16A7FD1AE848DC00CADC97 /* LPUIAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LPUIAlertView.m; path = Utils/LPUIAlertView.m; sourceTree = "<group>"; };
 		9D16A7FE1AE848DC00CADC97 /* PubUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PubUtils.h; path = Utils/PubUtils.h; sourceTree = "<group>"; };
@@ -95,6 +94,10 @@
 		9D1B2F461AF15624001EA843 /* ProfileAttributeValuesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileAttributeValuesTableViewController.h; path = Attributes/ProfileAttributeValuesTableViewController.h; sourceTree = "<group>"; };
 		9D1B2F471AF15624001EA843 /* ProfileAttributeValuesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileAttributeValuesTableViewController.m; path = Attributes/ProfileAttributeValuesTableViewController.m; sourceTree = "<group>"; };
 		9D1DD0741AF94B3800BD1A91 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		9D1EADF11B010A1100811D27 /* LPCustomGeoZoneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LPCustomGeoZoneManager.h; path = Listeners/LPCustomGeoZoneManager.h; sourceTree = "<group>"; };
+		9D1EADF21B010A1100811D27 /* LPCustomGeoZoneManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LPCustomGeoZoneManager.m; path = Listeners/LPCustomGeoZoneManager.m; sourceTree = "<group>"; };
+		9D1EADF71B011BB600811D27 /* LPCustomProximityZoneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LPCustomProximityZoneManager.h; path = Listeners/LPCustomProximityZoneManager.h; sourceTree = "<group>"; };
+		9D1EADF81B011BB600811D27 /* LPCustomProximityZoneManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LPCustomProximityZoneManager.m; path = Listeners/LPCustomProximityZoneManager.m; sourceTree = "<group>"; };
 		9D642FCA1AFAA93C00802EDC /* beacons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = beacons.json; path = BLE/beacons.json; sourceTree = "<group>"; };
 		9D642FCB1AFAA93C00802EDC /* LPBeaconZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LPBeaconZone.h; path = BLE/LPBeaconZone.h; sourceTree = "<group>"; };
 		9D642FCC1AFAA93C00802EDC /* LPBeaconZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LPBeaconZone.m; path = BLE/LPBeaconZone.m; sourceTree = "<group>"; };
@@ -179,7 +182,6 @@
 			children = (
 				9D642FC91AFAA91E00802EDC /* BLE */,
 				9D1B2F211AF1461E001EA843 /* Listeners */,
-				9D16A7F81AE848C000CADC97 /* Misc */,
 				9D16A7F71AE848B600CADC97 /* Utils */,
 				9D16A7E01AE8485D00CADC97 /* Messages */,
 				9D16A7DF1AE8485400CADC97 /* Attributes */,
@@ -262,15 +264,6 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
-		9D16A7F81AE848C000CADC97 /* Misc */ = {
-			isa = PBXGroup;
-			children = (
-				9D16A7F91AE848D000CADC97 /* SampleDefines.h */,
-				9D16A7FA1AE848D000CADC97 /* SampleDefines.m */,
-			);
-			name = Misc;
-			sourceTree = "<group>";
-		};
 		9D1B2F211AF1461E001EA843 /* Listeners */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +271,10 @@
 				9D1B2F231AF14633001EA843 /* LPMessageListener.m */,
 				9D1B2F241AF14633001EA843 /* LPZoneEventListener.h */,
 				9D1B2F251AF14633001EA843 /* LPZoneEventListener.m */,
+				9D1EADF11B010A1100811D27 /* LPCustomGeoZoneManager.h */,
+				9D1EADF21B010A1100811D27 /* LPCustomGeoZoneManager.m */,
+				9D1EADF71B011BB600811D27 /* LPCustomProximityZoneManager.h */,
+				9D1EADF81B011BB600811D27 /* LPCustomProximityZoneManager.m */,
 			);
 			name = Listeners;
 			sourceTree = "<group>";
@@ -472,9 +469,10 @@
 				9D1B2F491AF15624001EA843 /* ProfileAttributeValuesTableViewController.m in Sources */,
 				9D16A8011AE848DC00CADC97 /* PubUtils.m in Sources */,
 				9D0A2B9C1AE842FD004B7579 /* AppDelegate.m in Sources */,
-				9D16A7FB1AE848D000CADC97 /* SampleDefines.m in Sources */,
 				9D1B2F271AF14633001EA843 /* LPZoneEventListener.m in Sources */,
 				9D1B2F361AF154EC001EA843 /* AppInfoViewController.m in Sources */,
+				9D1EADF91B011BB600811D27 /* LPCustomProximityZoneManager.m in Sources */,
+				9D1EADF31B010A1100811D27 /* LPCustomGeoZoneManager.m in Sources */,
 				9D16A7E71AE8486F00CADC97 /* MessageDetailViewController.m in Sources */,
 				9D16A8001AE848DC00CADC97 /* LPUIAlertView.m in Sources */,
 				9D16A7E81AE8486F00CADC97 /* MessagesManager.m in Sources */,

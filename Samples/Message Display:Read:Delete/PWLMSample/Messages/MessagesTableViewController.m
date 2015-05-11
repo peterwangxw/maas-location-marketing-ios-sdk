@@ -11,7 +11,6 @@
 #import "MessagesTableViewController.h"
 #import "MessageDetailViewController.h"
 #import "MessagesManager.h"
-#import "SampleDefines.h"
 #import "PubUtils.h"
 
 @interface MessagesTableViewController()

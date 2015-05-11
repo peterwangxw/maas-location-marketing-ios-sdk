@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ This is a class using for listen message events.
+ */
 @interface LPMessageListener : NSObject
 
 /**

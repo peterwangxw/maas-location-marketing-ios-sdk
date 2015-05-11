@@ -9,15 +9,16 @@
 #import "AppDelegate.h"
 
 // Listeners
+#import "LPCustomGeoZoneManager.h"
+#import "LPCustomProximityZoneManager.h"
 #import "LPMessageListener.h"
-#import "LPZoneEventListener.h"
+// #import "LPZoneEventListener.h"
 // Commons
-#import "SampleDefines.h"
 #import "PubUtils.h"
 
 @implementation AppDelegate {
     __strong LPMessageListener *messageListener;
-    __strong LPZoneEventListener *zoneEventListener;
+    //__strong LPZoneEventListener *zoneEventListener;
 }
 
 #pragma mark - UIApplicationDelegate
@@ -30,7 +31,8 @@
     
     // LM Step 1.1(Required):
     // Start the service
-    [PWLocalpoint start];
+    [PWLocalpoint startWithZoneManagers:@[[LPCustomGeoZoneManager sharedManager],
+                                          [LPCustomProximityZoneManager sharedManager]]];
     
     // LM Step 1.2(Required):
     // Notify LM the app finishes launching
@@ -43,8 +45,8 @@
     
     // LM Step 1.4(Optional):
     // Start listen zone events
-    zoneEventListener = [LPZoneEventListener new];
-    [zoneEventListener startListening];
+    // zoneEventListener = [LPZoneEventListener new];
+    // [zoneEventListener startListening];
     
     return YES;
 }

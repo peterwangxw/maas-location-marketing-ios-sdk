@@ -15,12 +15,14 @@
 // Listeners
 #import "LPMessageListener.h"
 #import "LPZoneEventListener.h"
+#import "LPCustomGeoZoneManager.h"
+#import "LPCustomProximityZoneManager.h"
 // Commons
-#import "SampleDefines.h"
 #import "LPUIAlertView.h"
 #import "PubUtils.h"
 
 // Identifiers
+static NSString *const PWMainStoryBoardName = @"Main";
 static NSString *const MessageDetailViewControllerIdentifier = @"MessageDetailViewController";
 static NSString *const MessagesTableViewControllerIdentifier = @"MessagesTableViewController";
 
@@ -39,7 +41,8 @@ static NSString *const MessagesTableViewControllerIdentifier = @"MessagesTableVi
     
     // LM Step 1.1(Required):
     // Start the service
-    [PWLocalpoint start];
+    [PWLocalpoint startWithZoneManagers:@[[LPCustomGeoZoneManager sharedManager],
+                                          [LPCustomProximityZoneManager sharedManager]]];
     
     // LM Step 1.2(Required):
     // Notify LM the app finishes launching
@@ -52,6 +55,7 @@ static NSString *const MessagesTableViewControllerIdentifier = @"MessagesTableVi
     
     // LM Step 1.4(Optional):
     // Start listen zone events
+    // If you custom `PWLPGeoZoneManager` and specified your own delegate at step 1.1, it's no need to listen the events any more.
     zoneEventListener = [LPZoneEventListener new];
     [zoneEventListener startListening];
     
@@ -112,11 +116,11 @@ static NSString *const MessagesTableViewControllerIdentifier = @"MessagesTableVi
         NSString *messageId = [[PWLPZoneMessageManager sharedManager] parseMessageIdentifier:notification.userInfo];
         if (messageId) {
             // Display 'OK' and 'View' button on the alert view if there is message related
-            cancelButton = AlertOKButtonName;
-            viewButton = AlertViewButtonName;
+            cancelButton = @"OK";
+            viewButton = @"View";
         } else {
             // Or else just display an 'OK' button
-            cancelButton = AlertOKButtonName;
+            cancelButton = @"OK";
             viewButton = nil;
         }
         
