@@ -38,7 +38,7 @@ Inside your application delegate, you will need to initialize MaaSCore in the ap
 
 ````objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    / LM Step 1.0(Required):
+    // LM Step 1.0(Required):
     // Set a explicit configuration for LM
     [PWLPConfiguration useConfiguration:[PWLPConfiguration defaultConfiguration]];
     
@@ -57,22 +57,22 @@ Inside your application delegate, you will need to initialize MaaSCore in the ap
 Since PWLocalpoint v3.0, the *application developer* is not responsible with registering for remote notifications with Apple. Apple has three primary methods for handling remote notifications. You will need to implement these in your application delegate, forwarding the results to PWAlerts:
 
 ````objective-c
-- (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)devToken
-{
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    // LM Step 2.0(Required):
+    // Notify LM the app succeed to register for remote notification
     [PWLocalpoint didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
-    ...
 }
 
-- (void)application:(UIApplication *)app didFailToRegisterForRemoteNotificationsWithError:(NSError *)err
-{
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    // LM Step 3.2(Required):
+    // Notify LM the app fail to register for remote notification
     [PWLocalpoint didFailToRegisterForRemoteNotificationsWithError:error];
-    ...
 }
 
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
-{
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    // LM Step 4.0(Required):
+    // Notify LM the app receives a remote notificaiton
     [PWLocalpoint didReceiveRemoteNotification:userInfo];
-    ...
 }
 ````
 
