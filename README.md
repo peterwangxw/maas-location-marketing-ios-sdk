@@ -37,7 +37,7 @@ Here are some resources to help you configure your app for Apple Push Notificati
 
 
 
-Application Setup
+Application Setup (Required)
 -----------------
 At the top of your application delegate (.m) file, add the following:
 
@@ -92,7 +92,7 @@ Since PWLocalpoint v3.0, the *application developer* is not responsible with reg
 
 
 
-Custom Local Notification 
+Custom Local Notification (Optional)
 --------------
 
 The PWLocalpoint provides the ability to custom the local notification. There is a SDK method that facilitate this: *localpointShouldDisplayLocalNotification:*.
@@ -112,7 +112,7 @@ The PWLocalpoint provides the ability to custom the local notification. There is
 ````
 
 
-Attributes Management 
+Attributes Management (Optional)
 --------------
 
 The PWLocalpoint provides the ability to manager customer's profile attributes. There are some SDK methods in `PWLPAttributeManager` that facilitate this: 
@@ -122,7 +122,7 @@ The PWLocalpoint provides the ability to manager customer's profile attributes. 
 
 
 
-Custom Indentifier Management 
+Custom Indentifier Management (Optional) 
 --------------
 
 The PWLocalpoint provides the ability to manager customer identifier. There are some SDK methods in `PWLPAttributeManager` that facilitate this: 
@@ -131,7 +131,7 @@ The PWLocalpoint provides the ability to manager customer identifier. There are 
 
 
 
-Listen Zone Events 
+Listen Zone Events (Optional) 
 --------------
 
 The PWLocalpoint provides two ways to let customer receive the zone events: 
@@ -146,7 +146,7 @@ The PWLocalpoint provides two ways to let customer receive the zone events:
 
 
 
-Listen Message Events 
+Listen Message Events (Optional) 
 --------------
 
 The PWLocalpoint posts the corresponding notification once message received or modified: 
