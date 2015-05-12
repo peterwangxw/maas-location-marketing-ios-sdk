@@ -130,9 +130,9 @@ Attributes Management (Optional)
 --------------
 
 The PWLocalpoint provides the ability to manager customer's profile attributes. There are some SDK methods in `PWLPAttributeManager` that facilitate this: 
-- *fetchProfileAttributeMetadataWithCompletion:*
-- *fetchProfileAttributesWithCompletion:*
-- *updateProfileAttributes: completion:*
+- *fetchProfileAttributeMetadataWithCompletion:*  <!-- Fetch all attribute metadata -->
+- *fetchProfileAttributesWithCompletion:*  <!-- Fetch assicated attributes for the device -->
+- *updateProfileAttributes: completion:*  <!-- Update attributes for the assicated device -->
 
 
 
@@ -140,8 +140,8 @@ Custom Indentifier Management (Optional)
 --------------
 
 The PWLocalpoint provides the ability to manager customer identifier. There are some SDK methods in `PWLPAttributeManager` that facilitate this: 
-- *fetchCustomIdentifierWithCompletion:*
-- *updateCustomIdentifier: completion:*
+- *fetchCustomIdentifierWithCompletion:*  <!-- Fetch assicated custom identifier -->
+- *updateCustomIdentifier: completion:*  <!-- Update custom identifier -->
 
 
 
