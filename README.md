@@ -114,9 +114,9 @@ Attributes Management
 --------------
 
 The PWLocalpoint provides the ability to manager customer's profile attributes. There are some SDK methods in `PWLPAttributeManager` that facilitate this: 
-- *fetchProfileAttributeMetadataWithCompletion:*.
-- *fetchProfileAttributesWithCompletion:*.
-- *updateProfileAttributes: completion:*.
+- *fetchProfileAttributeMetadataWithCompletion:*
+- *fetchProfileAttributesWithCompletion:*
+- *updateProfileAttributes: completion:*
 
 
 
@@ -124,5 +124,5 @@ Custom Indentifier Management
 --------------
 
 The PWLocalpoint provides the ability to manager customer identifier. There are some SDK methods in `PWLPAttributeManager` that facilitate this: 
-- *fetchCustomIdentifierWithCompletion:*.
-- *updateCustomIdentifier: completion:*.
+- *fetchCustomIdentifierWithCompletion:*
+- *updateCustomIdentifier: completion:*
