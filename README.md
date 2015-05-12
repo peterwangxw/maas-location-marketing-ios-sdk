@@ -22,9 +22,20 @@ The recommended way to use PWLocalpoint is via [CocoaPods](http://cocoapods.org)
 pod 'PWLocalpoint', :git => 'git@github.com:xwang-phunware/maas-location-marketing-ios-sdk.git'
 ````
 
+
+
+
 Documentation
 ------------
-TODO....
+PWLocalpoint documentation is included in the Documents folder in the repository as both HTML and as a .docset. You can also find the latest documentation here: http://phunware.github.io/maas-location-marketing-ios-sdk/
+
+Here are some resources to help you configure your app for Apple Push Notifications:
+- [Apple's documentation](https://developer.apple.com/library/ios/#documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Introduction.html)
+- [Apple Push Notification services (APNs) Tutorial (1/2)](http://www.raywenderlich.com/32960/apple-push-notification-services-in-ios-6-tutorial-part-1)
+- [Apple Push Notification services (APNs) tutorial (2/2)](http://www.raywenderlich.com/32963/apple-push-notification-services-in-ios-6-tutorial-part-2)
+
+
+
 
 Application Setup
 -----------------
@@ -82,7 +93,7 @@ Since PWLocalpoint v3.0, the *application developer* is not responsible with reg
 Custom Local Notification 
 --------------
 
-The PWLocalpoint provides the ability to custom the local notification. There is a SDK methods that facilitate this: *localpointShouldDisplayLocalNotification:*.
+The PWLocalpoint provides the ability to custom the local notification. There is a SDK method that facilitate this: *localpointShouldDisplayLocalNotification:*.
 
 ````objective-c
 // Custom 'ENTRY' campaign local notification
@@ -97,3 +108,21 @@ The PWLocalpoint provides the ability to custom the local notification. There is
     return YES;
 }
 ````
+
+
+Attributes Management 
+--------------
+
+The PWLocalpoint provides the ability to manager customer's profile attributes. There are some SDK methods in `PWLPAttributeManager` that facilitate this: 
+- *fetchProfileAttributeMetadataWithCompletion:*.
+- *fetchProfileAttributesWithCompletion:*.
+- *updateProfileAttributes: completion:*.
+
+
+
+Custom Indentifier Management 
+--------------
+
+The PWLocalpoint provides the ability to manager customer identifier. There are some SDK methods in `PWLPAttributeManager` that facilitate this: 
+- *fetchCustomIdentifierWithCompletion:*.
+- *updateCustomIdentifier: completion:*.
