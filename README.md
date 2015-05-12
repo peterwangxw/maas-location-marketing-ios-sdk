@@ -136,11 +136,12 @@ Listen Zone Events
 
 The PWLocalpoint provides two ways to let customer listen the zone events: 
 - Start LM service with a custom Geo-Zone manager
-    1. Create your own [Geo-Zone manager](https://github.com/xwang-phunware/maas-location-marketing-ios-sdk/blob/master/Samples/Custom%20Listeners/PWLMSample/Listeners/LPCustomGeoZoneManager.m) which extends `PWLPGeoZoneManager` and specifies the own Geo-Zone manager delegate.
-    2. Start LM service with it. 
+    1. Create the custom Geo-Zone manager [LPCustomGeoZoneManager.h](https://github.com/xwang-phunware/maas-location-marketing-ios-sdk/blob/master/Samples/Custom%20Listeners/PWLMSample/Listeners/LPCustomGeoZoneManager.h) / [LPCustomGeoZoneManager.m](https://github.com/xwang-phunware/maas-location-marketing-ios-sdk/blob/master/Samples/Custom%20Listeners/PWLMSample/Listeners/LPCustomGeoZoneManager.m), which extends `PWLPGeoZoneManager.h` and has its own Geo-Zone manager delegate class.
+    2. Start LM service with the `LPCustomGeoZoneManager`. 
 ````objective-c
 [PWLocalpoint startWithZoneManagers:@[[LPCustomGeoZoneManager sharedManager]]];
 ````
 - Register to listen their notifications
+    Here is an example class [LPZoneEventListener.h](https://github.com/xwang-phunware/maas-location-marketing-ios-sdk/blob/master/Samples/Custom%20Listeners/PWLMSample/Listeners/LPZoneEventListener.h) / [LPZoneEventListener.m](https://github.com/xwang-phunware/maas-location-marketing-ios-sdk/blob/master/Samples/Custom%20Listeners/PWLMSample/Listeners/LPZoneEventListener.m) 
 
 
