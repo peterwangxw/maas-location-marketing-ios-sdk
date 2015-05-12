@@ -142,6 +142,6 @@ The PWLocalpoint provides two ways to let customer listen the zone events:
 [PWLocalpoint startWithZoneManagers:@[[LPCustomGeoZoneManager sharedManager]]];
 ````
 - Register to listen their notifications
-    Here is an example class [LPZoneEventListener.h](https://github.com/xwang-phunware/maas-location-marketing-ios-sdk/blob/master/Samples/Custom%20Listeners/PWLMSample/Listeners/LPZoneEventListener.h) / [LPZoneEventListener.m](https://github.com/xwang-phunware/maas-location-marketing-ios-sdk/blob/master/Samples/Custom%20Listeners/PWLMSample/Listeners/LPZoneEventListener.m) 
+    1. Here is an example class [LPZoneEventListener.h](https://github.com/xwang-phunware/maas-location-marketing-ios-sdk/blob/master/Samples/Custom%20Listeners/PWLMSample/Listeners/LPZoneEventListener.h) / [LPZoneEventListener.m](https://github.com/xwang-phunware/maas-location-marketing-ios-sdk/blob/master/Samples/Custom%20Listeners/PWLMSample/Listeners/LPZoneEventListener.m) 
 
 
