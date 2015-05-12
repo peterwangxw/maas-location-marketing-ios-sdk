@@ -9,7 +9,6 @@ This is Phunware's iOS SDK for the Location Marketing module. Visit http://maas.
 Requirements
 ------------
 
-- MaaSCore v1.3.0 or greater
 - iOS 6.0 or greater
 - Xcode 5 or greater
 
@@ -20,7 +19,7 @@ Installation
 
 The recommended way to use PWLocalpoint is via [CocoaPods](http://cocoapods.org). Add the following pod to your `Podfile` to use PWLocalpoint:
 ````
-pod 'PWLocalpoint', '~>3.0'
+pod 'PWLocalpoint', :git => 'git@github.com:xwang-phunware/maas-location-marketing-ios-sdk.git'
 ````
 
 Documentation
@@ -39,10 +38,16 @@ Inside your application delegate, you will need to initialize MaaSCore in the ap
 
 ````objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Start Localpoint service
+    / LM Step 1.0(Required):
+    // Set a explicit configuration for LM
+    [PWLPConfiguration useConfiguration:[PWLPConfiguration defaultConfiguration]];
+    
+    // LM Step 1.1(Required):
+    // Start the service
     [PWLocalpoint start];
     
-    // Notify Localpoint the app finishes launching
+    // LM Step 1.2(Required):
+    // Notify LM the app finishes launching
     [PWLocalpoint didFinishLaunchingWithOptions:launchOptions];
     
     return YES;
