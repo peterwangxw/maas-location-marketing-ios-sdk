@@ -134,7 +134,7 @@ The PWLocalpoint provides the ability to manager customer identifier. There are 
 Listen Zone Events 
 --------------
 
-The PWLocalpoint provides two ways to let customer listen the zone events: 
+The PWLocalpoint provides two ways to let customer receive the zone events: 
 - Start with your custom Geo-Zone manager
     1. Create the custom Geo-Zone manager [LPCustomGeoZoneManager.h](https://github.com/xwang-phunware/maas-location-marketing-ios-sdk/blob/master/Samples/Custom%20Listeners/PWLMSample/Listeners/LPCustomGeoZoneManager.h) / [LPCustomGeoZoneManager.m](https://github.com/xwang-phunware/maas-location-marketing-ios-sdk/blob/master/Samples/Custom%20Listeners/PWLMSample/Listeners/LPCustomGeoZoneManager.m), which extends `PWLPGeoZoneManager.h` and has its own Geo-Zone manager delegate class.
     2. Start LM service with the `LPCustomGeoZoneManager`. 
@@ -149,7 +149,7 @@ The PWLocalpoint provides two ways to let customer listen the zone events:
 Listen Message Events 
 --------------
 
-The PWLocalpoint posts the corresponding notification when message event happens: 
+The PWLocalpoint posts the corresponding notification once message received or modified: 
 
 - Register to observe message notifications
     1. Here is an example class [LPMessageListener.h](https://github.com/xwang-phunware/maas-location-marketing-ios-sdk/blob/master/Samples/Custom%20Listeners/PWLMSample/Listeners/LPMessageListener.h) / [LPMessageListener.m](https://github.com/xwang-phunware/maas-location-marketing-ios-sdk/blob/master/Samples/Custom%20Listeners/PWLMSample/Listeners/LPMessageListener.m) 
