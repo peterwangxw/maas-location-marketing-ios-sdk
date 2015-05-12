@@ -96,7 +96,7 @@ Custom Local Notification with Localpoint delegate (Optional)
 --------------
 
 The PWLocalpoint provides the ability to custom the local notification. The Localpoint delegate method that facilitate this:
-Add the *PWLocalpointDelegate* protocol to you `AppDelegate.h`
+- Add the *PWLocalpointDelegate* protocol for your `AppDelegate.h`
 ````objective-c
 #import <UIKit/UIKit.h>
 #import <PWLocalpoint/PWLocalpoint.h>
@@ -108,7 +108,7 @@ Add the *PWLocalpointDelegate* protocol to you `AppDelegate.h`
 @end
 ````
 
-*localpointShouldDisplayLocalNotification:*
+- Implement delegate method *localpointShouldDisplayLocalNotification:*
 
 ````objective-c
 // Custom 'ENTRY' campaign local notification
