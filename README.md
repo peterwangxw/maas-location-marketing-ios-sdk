@@ -92,10 +92,23 @@ Since PWLocalpoint v3.0, the *application developer* is not responsible with reg
 
 
 
-Custom Local Notification (Optional)
+Custom Local Notification with Localpoint delegate (Optional)
 --------------
 
-The PWLocalpoint provides the ability to custom the local notification. There is a SDK method that facilitate this: *localpointShouldDisplayLocalNotification:*.
+The PWLocalpoint provides the ability to custom the local notification. The Localpoint delegate method that facilitate this:
+Add the *PWLocalpointDelegate* protocol to you `AppDelegate.h`
+````objective-c
+#import <UIKit/UIKit.h>
+#import <PWLocalpoint/PWLocalpoint.h>
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate, PWLocalpointDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
+
+@end
+````
+
+*localpointShouldDisplayLocalNotification:*
 
 ````objective-c
 // Custom 'ENTRY' campaign local notification
@@ -103,13 +116,14 @@ The PWLocalpoint provides the ability to custom the local notification. There is
     // Here is an example to customize entry campaign message to add a string 'Welcome. ' at the front of notification title.
     if ([notification.message.campaignType.lowercaseString isEqualToString:PWLPZoneMessageGeofenceEntryCampaignType.lowercaseString]) {
         // Here we only custom the entry campaign
-        notification.alertTitle = [LocalNotificationCustomString stringByAppendingString:notification.alertTitle];
+        notification.alertTitle = [@"Welcome. " stringByAppendingString:notification.alertTitle];
     }
     
     // *Important*, this notification will be sent only when it returns 'YES', it will be ingore if it returns 'NO'.
     return YES;
 }
 ````
+
 
 
 Attributes Management (Optional)
