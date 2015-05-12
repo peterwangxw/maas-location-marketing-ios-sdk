@@ -92,7 +92,7 @@ Since PWLocalpoint v3.0, the *application developer* is not responsible with reg
 
 
 
-Custom Local Notification with Localpoint delegate (Optional)
+Custom Local Notification via Localpoint delegate (Optional)
 --------------
 
 The PWLocalpoint provides the ability to custom the local notification. The Localpoint delegate method that facilitate this:
