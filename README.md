@@ -77,7 +77,7 @@ Since PWLocalpoint v3.0, the *application developer* is not responsible with reg
 }
 
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
-    // LM Step 3.2(Required):
+    // LM Step 3.0(Required):
     // Notify LM the app fail to register for remote notification
     [PWLocalpoint didFailToRegisterForRemoteNotificationsWithError:error];
 }
