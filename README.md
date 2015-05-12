@@ -54,8 +54,10 @@ Inside your application delegate, you will need to initialize MaaSCore in the ap
     [PWLPConfiguration useConfiguration:[PWLPConfiguration defaultConfiguration]];
     
     // LM Step 1.1(Required):
-    // Start the service
+    // Start the standard service
     [PWLocalpoint start];
+    // Or start with your custom service
+    [PWLocalpoint startWithZoneManagers:@[[LPCustomGeoZoneManager sharedManager]]];
     
     // LM Step 1.2(Required):
     // Notify LM the app finishes launching
@@ -126,3 +128,19 @@ Custom Indentifier Management
 The PWLocalpoint provides the ability to manager customer identifier. There are some SDK methods in `PWLPAttributeManager` that facilitate this: 
 - *fetchCustomIdentifierWithCompletion:*
 - *updateCustomIdentifier: completion:*
+
+
+
+Listen Zone Events 
+--------------
+
+The PWLocalpoint provides two ways to let customer listen the zone events: 
+- Start LM service with a custom Geo-Zone manager
+    1. Create your own [Geo-Zone manager](https://github.com/xwang-phunware/maas-location-marketing-ios-sdk/blob/master/Samples/Custom%20Listeners/PWLMSample/Listeners/LPCustomGeoZoneManager.m) which extends `PWLPGeoZoneManager` and specifies the own Geo-Zone manager delegate.
+    2. Start LM service with it. 
+````objective-c
+[PWLocalpoint startWithZoneManagers:@[[LPCustomGeoZoneManager sharedManager]]];
+````
+- Register to listen their notifications
+
+
