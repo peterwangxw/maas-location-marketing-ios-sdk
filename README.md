@@ -56,8 +56,6 @@ Inside your application delegate, you will need to initialize MaaSCore in the ap
     // LM Step 1.1(Required):
     // Start the standard service
     [PWLocalpoint start];
-    // Or start with your custom service
-    [PWLocalpoint startWithZoneManagers:@[[LPCustomGeoZoneManager sharedManager]]];
     
     // LM Step 1.2(Required):
     // Notify LM the app finishes launching
