@@ -96,77 +96,19 @@ Custom Zone Managers (Optional)
 
 The PWLocalpoint provides the ability to custom zone managers. Here is a example of custom PWLPGeoZoneManager:
 - Create your own custom manager [LPCustomGeoZoneManager.h](https://github.com/xwang-phunware/maas-location-marketing-ios-sdk/blob/master/Samples/Custom%20Listeners/PWLMSample/Listeners/LPCustomGeoZoneManager.h) / [LPCustomGeoZoneManager.m](https://github.com/xwang-phunware/maas-location-marketing-ios-sdk/blob/master/Samples/Custom%20Listeners/PWLMSample/Listeners/LPCustomGeoZoneManager.m)
+
+- Start Localpoint with your custom manager: 
 ````objective-c
-#import "LPCustomGeoZoneManager.h"
-
-@interface LPZoneManagerDelegate : NSObject <PWLPZoneManagerDelegate>
-
-@end
-
-@implementation LPZoneManagerDelegate
-
-- (void)zoneManager:(id<PWLPZoneManager>)zoneManager didEnterZone:(id<PWLPZone>)zone {
-
-}
-
-- (void)zoneManager:(id<PWLPZoneManager>)zoneManager didExitZone:(id<PWLPZone>)zone {
-    
-}
-
-- (void)zoneManager:(id<PWLPZoneManager>)zoneManager didAddZones:(NSArray *)zones {
-    
-}
-
-- (void)zoneManager:(id<PWLPZoneManager>)zoneManager didModifyZones:(NSArray *)zones {
-    
-}
-
-- (void)zoneManager:(id<PWLPZoneManager>)zoneManager didDeleteZones:(NSArray *)zoneIdentifiers {
-    
-}
-
-- (void)zoneManager:(id<PWLPZoneManager>)zoneManager didCheckInForZone:(id<PWLPZone>)zone {
-    
-}
-
-- (void)zoneManager:(id<PWLPZoneManager>)zoneManager failedCheckInForZone:(id<PWLPZone>)zone error:(NSError *)error {
-    
-}
-
-@end
-
-
-@interface LPCustomGeoZoneManager()
-
-@property (nonatomic) LPZoneManagerDelegate *geoZoneManagerDelegate;
-
-@end
-
-@implementation LPCustomGeoZoneManager
-
-+ (instancetype)sharedManager {
-    static LPCustomGeoZoneManager *manager;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        manager = [LPCustomGeoZoneManager new];
-    });
-    
-    return manager;
-}
-
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        _geoZoneManagerDelegate = [LPZoneManagerDelegate new];
-        self.delegate = _geoZoneManagerDelegate;
-    }
-    return self;
-}
-
-@end
+[PWLocalpoint startWithZoneManagers:@[[LPCustomGeoZoneManager sharedManager]]];
 ````
 
+- Then you can access the geofence zones by the following methods:
+````objective-c
+// Get available geozones
+[PWLocalpoint sharedManager].availableZones;
+// Get zones currently being monitored
+[PWLocalpoint sharedManager].monitoredZones;
+````
 
 
 
