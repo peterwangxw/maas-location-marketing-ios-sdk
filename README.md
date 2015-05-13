@@ -89,6 +89,50 @@ Since PWLocalpoint v3.0, the *application developer* is not responsible with reg
 
 
 
+Localpoint Delegete `PWLocalpointDelegate` (Optional)
+--------------
+
+The PWLocalpoint gives the chance to respond to important changes and custom local notification:
+
+- Register *PWLocalpointDelegate* protocol in your `AppDelegate.h`
+
+````objective-c
+#import <UIKit/UIKit.h>
+#import <PWLocalpoint/PWLocalpoint.h>
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate, PWLocalpointDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
+
+@end
+````
+
+- Custom Local Notification via *localpointShouldDisplayLocalNotification*
+
+````objective-c
+// Custom 'ENTRY' campaign local notification
+- (BOOL)localpointShouldDisplayLocalNotification:(PWLPLocalNotification *)notification {
+    // Here is an example to customize entry campaign message to add a string 'Welcome. ' at the front of notification title.
+    if ([notification.message.campaignType.lowercaseString isEqualToString:PWLPZoneMessageGeofenceEntryCampaignType.lowercaseString]) {
+        // Here we only custom the entry campaign
+        notification.alertTitle = [@"Welcome. " stringByAppendingString:notification.alertTitle];
+    }
+    
+    // *Important*, this notification will be sent only when it returns 'YES', it will be ingore if it returns 'NO'.
+    return YES;
+}
+````
+
+- Listen SDK status changes via *localpointFailedToStartWithError*
+
+````objective-c
+// Custom 'ENTRY' campaign local notification
+- (void)localpointFailedToStartWithError:(NSError *)error {
+    NSLog(@"Start Localpoint SDK with error: %@", error);
+}
+````
+
+
 Custom Zone Managers (Optional)
 --------------
 
@@ -143,50 +187,6 @@ The PWLocalpoint provides the ability to custom zone managers. Here is a example
 @end
 ````
 
-
-
-PWLocalpointDelegate (Optional)
---------------
-
-The PWLocalpoint gives the chance to respond to important changes and custom local notification:
-
-- Register *PWLocalpointDelegate* protocol in your `AppDelegate.h`
-
-````objective-c
-#import <UIKit/UIKit.h>
-#import <PWLocalpoint/PWLocalpoint.h>
-
-@interface AppDelegate : UIResponder <UIApplicationDelegate, PWLocalpointDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
-@end
-````
-
-- Custom Local Notification via *localpointShouldDisplayLocalNotification*
-
-````objective-c
-// Custom 'ENTRY' campaign local notification
-- (BOOL)localpointShouldDisplayLocalNotification:(PWLPLocalNotification *)notification {
-    // Here is an example to customize entry campaign message to add a string 'Welcome. ' at the front of notification title.
-    if ([notification.message.campaignType.lowercaseString isEqualToString:PWLPZoneMessageGeofenceEntryCampaignType.lowercaseString]) {
-        // Here we only custom the entry campaign
-        notification.alertTitle = [@"Welcome. " stringByAppendingString:notification.alertTitle];
-    }
-    
-    // *Important*, this notification will be sent only when it returns 'YES', it will be ingore if it returns 'NO'.
-    return YES;
-}
-````
-
-- Listen SDK status changes via *localpointFailedToStartWithError*
-
-````objective-c
-// Custom 'ENTRY' campaign local notification
-- (void)localpointFailedToStartWithError:(NSError *)error {
-    NSLog(@"Start Localpoint SDK with error: %@", error);
-}
-````
 
 
 
