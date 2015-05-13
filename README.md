@@ -102,12 +102,47 @@ The PWLocalpoint provides the ability to custom zone managers. Here is a example
 [PWLocalpoint startWithZoneManagers:@[[LPCustomGeoZoneManager sharedManager]]];
 ````
 
-- Then you can access the geofence zones by the following methods:
+- So it's getting easy to access the geofence zones by the following methods:
 ````objective-c
 // Get available geozones
 [PWLocalpoint sharedManager].availableZones;
 // Get zones currently being monitored
 [PWLocalpoint sharedManager].monitoredZones;
+````
+
+- And the delegate methods in your custom zone manager will be notified properly:
+````objective-c
+@implementation LPZoneManagerDelegate
+
+- (void)zoneManager:(id<PWLPZoneManager>)zoneManager didEnterZone:(id<PWLPZone>)zone {
+    
+}
+
+- (void)zoneManager:(id<PWLPZoneManager>)zoneManager didExitZone:(id<PWLPZone>)zone {
+    
+}
+
+- (void)zoneManager:(id<PWLPZoneManager>)zoneManager didAddZones:(NSArray *)zones {
+    
+}
+
+- (void)zoneManager:(id<PWLPZoneManager>)zoneManager didModifyZones:(NSArray *)zones {
+    
+}
+
+- (void)zoneManager:(id<PWLPZoneManager>)zoneManager didDeleteZones:(NSArray *)zoneIdentifiers {
+    
+}
+
+- (void)zoneManager:(id<PWLPZoneManager>)zoneManager didCheckInForZone:(id<PWLPZone>)zone {
+    
+}
+
+- (void)zoneManager:(id<PWLPZoneManager>)zoneManager failedCheckInForZone:(id<PWLPZone>)zone error:(NSError *)error {
+    
+}
+
+@end
 ````
 
 
