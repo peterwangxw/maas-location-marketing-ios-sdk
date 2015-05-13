@@ -89,7 +89,7 @@ Since PWLocalpoint v3.0, the *application developer* is not responsible with reg
 
 
 
-Localpoint Delegete `PWLocalpointDelegate` (Optional)
+Localpoint Delegete *PWLocalpointDelegate* (Optional)
 --------------
 
 The PWLocalpoint gives the chance to respond to important changes and custom local notification:
@@ -209,26 +209,15 @@ The PWLocalpoint provides the ability to manager customer identifier. There are 
 
 
 
-Listen Zone Events (Optional) 
+Alternative Listen Zone Events (Optional) 
 --------------
 
-The PWLocalpoint provides two ways to let customer receive the zone events: 
-- Start with your custom Geo-Zone manager
-    1. Create the custom Geo-Zone manager [LPCustomGeoZoneManager.h](https://github.com/xwang-phunware/maas-location-marketing-ios-sdk/blob/master/Samples/Custom%20Listeners/PWLMSample/Listeners/LPCustomGeoZoneManager.h) / [LPCustomGeoZoneManager.m](https://github.com/xwang-phunware/maas-location-marketing-ios-sdk/blob/master/Samples/Custom%20Listeners/PWLMSample/Listeners/LPCustomGeoZoneManager.m), which extends `PWLPGeoZoneManager.h` and has its own Geo-Zone manager delegate class.
-    2. Start LM service with the `LPCustomGeoZoneManager`. 
-````objective-c
-[PWLocalpoint startWithZoneManagers:@[[LPCustomGeoZoneManager sharedManager]]];
-````
-- Register to observe zone notifications
-    1. Here is an example class [LPZoneEventListener.h](https://github.com/xwang-phunware/maas-location-marketing-ios-sdk/blob/master/Samples/Custom%20Listeners/PWLMSample/Listeners/LPZoneEventListener.h) / [LPZoneEventListener.m](https://github.com/xwang-phunware/maas-location-marketing-ios-sdk/blob/master/Samples/Custom%20Listeners/PWLMSample/Listeners/LPZoneEventListener.m) 
+The PWLocalpoint posts the corresponding notification once enter a zone, exit a zone or zone changes, app developer can register to receive zone notifications, and here is an example class [LPZoneEventListener.h](https://github.com/xwang-phunware/maas-location-marketing-ios-sdk/blob/master/Samples/Custom%20Listeners/PWLMSample/Listeners/LPZoneEventListener.h) / [LPZoneEventListener.m](https://github.com/xwang-phunware/maas-location-marketing-ios-sdk/blob/master/Samples/Custom%20Listeners/PWLMSample/Listeners/LPZoneEventListener.m) 
 
 
 
 Listen Message Events (Optional) 
 --------------
 
-The PWLocalpoint posts the corresponding notification once message received or modified: 
-
-- Register to observe message notifications
-    1. Here is an example class [LPMessageListener.h](https://github.com/xwang-phunware/maas-location-marketing-ios-sdk/blob/master/Samples/Custom%20Listeners/PWLMSample/Listeners/LPMessageListener.h) / [LPMessageListener.m](https://github.com/xwang-phunware/maas-location-marketing-ios-sdk/blob/master/Samples/Custom%20Listeners/PWLMSample/Listeners/LPMessageListener.m) 
+The PWLocalpoint posts the corresponding notification once message received or modified, app developer can register to receive zone notifications, and here is an example class, and here is an example class [LPMessageListener.h](https://github.com/xwang-phunware/maas-location-marketing-ios-sdk/blob/master/Samples/Custom%20Listeners/PWLMSample/Listeners/LPMessageListener.h) / [LPMessageListener.m](https://github.com/xwang-phunware/maas-location-marketing-ios-sdk/blob/master/Samples/Custom%20Listeners/PWLMSample/Listeners/LPMessageListener.m) 
 
