@@ -145,11 +145,13 @@ The PWLocalpoint provides the ability to custom zone managers. Here is a example
 
 
 
-Custom Local Notification via PWLocalpointDelegate (Optional)
+PWLocalpointDelegate (Optional)
 --------------
 
-The PWLocalpoint provides the ability to custom the local notification. The Localpoint delegate method that facilitate this:
-- Add the *PWLocalpointDelegate* protocol for your `AppDelegate.h`
+The PWLocalpoint gives the chance to respond to important changes and custom local notification:
+
+- Register *PWLocalpointDelegate* protocol in your `AppDelegate.h`
+
 ````objective-c
 #import <UIKit/UIKit.h>
 #import <PWLocalpoint/PWLocalpoint.h>
@@ -161,7 +163,7 @@ The PWLocalpoint provides the ability to custom the local notification. The Loca
 @end
 ````
 
-- Implement delegate method *localpointShouldDisplayLocalNotification:*
+- Custom Local Notification via *localpointShouldDisplayLocalNotification*
 
 ````objective-c
 // Custom 'ENTRY' campaign local notification
@@ -174,6 +176,15 @@ The PWLocalpoint provides the ability to custom the local notification. The Loca
     
     // *Important*, this notification will be sent only when it returns 'YES', it will be ingore if it returns 'NO'.
     return YES;
+}
+````
+
+- Listen SDK status changes via *localpointFailedToStartWithError*
+
+````objective-c
+// Custom 'ENTRY' campaign local notification
+- (void)localpointFailedToStartWithError:(NSError *)error {
+    NSLog(@"Start Localpoint SDK with error: %@", error);
 }
 ````
 
