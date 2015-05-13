@@ -30,6 +30,7 @@
     // Set up messages to display
     self.messages = [PWLPZoneMessageManager sharedManager].messages;
     
+    [self.segment setSelectedSegmentIndex:0];
     [self.tableView reloadData];
 }
 

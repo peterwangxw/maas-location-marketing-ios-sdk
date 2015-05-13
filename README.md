@@ -9,7 +9,6 @@ This is Phunware's iOS SDK for the Location Marketing module. Visit http://maas.
 Requirements
 ------------
 
-- MaaSCore v1.3.0 or greater
 - iOS 6.0 or greater
 - Xcode 5 or greater
 
@@ -20,7 +19,7 @@ Installation
 
 The recommended way to use PWLocalpoint is via [CocoaPods](http://cocoapods.org). Add the following pod to your `Podfile` to use PWLocalpoint:
 ````
-pod 'PWLocalpoint', '~>3.0'
+pod 'PWLocalpoint', :git => 'git@github.com:xwang-phunware/maas-location-marketing-ios-sdk.git'
 ````
 
 Documentation
@@ -35,16 +34,16 @@ At the top of your application delegate (.m) file, add the following:
 #import <PWLocalpoint/PWLocalpoint.h>
 ````
 
-Inside your application delegate, you will need to initialize MaaSCore in the application:didFinishLaunchingWithOptions: method. 
+Inside your application delegate, you will need to initialize MaaSCore in the application:didFinishLaunchingWithOptions: method.
 
 ````objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Start Localpoint service
     [PWLocalpoint start];
-    
+
     // Notify Localpoint the app finishes launching
     [PWLocalpoint didFinishLaunchingWithOptions:launchOptions];
-    
+
     return YES;
 }
 ````
@@ -74,7 +73,7 @@ Since PWLocalpoint v3.0, the *application developer* is not responsible with reg
 
 
 
-Custom Local Notification 
+Custom Local Notification
 --------------
 
 The PWLocalpoint provides the ability to custom the local notification. There is a SDK methods that facilitate this: *localpointShouldDisplayLocalNotification:*.
@@ -87,7 +86,7 @@ The PWLocalpoint provides the ability to custom the local notification. There is
         // Here we only custom the entry campaign
         notification.alertTitle = [LocalNotificationCustomString stringByAppendingString:notification.alertTitle];
     }
-    
+
     // *Important*, this notification will be sent only when it returns 'YES', it will be ingore if it returns 'NO'.
     return YES;
 }

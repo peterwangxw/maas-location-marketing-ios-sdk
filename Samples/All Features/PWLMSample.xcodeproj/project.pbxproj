@@ -20,7 +20,6 @@
 		9D16A7F21AE8487A00CADC97 /* AttributeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D16A7EB1AE8487A00CADC97 /* AttributeTableViewCell.m */; };
 		9D16A7F41AE8487A00CADC97 /* AttributeTableViewTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D16A7ED1AE8487A00CADC97 /* AttributeTableViewTextFieldCell.xib */; };
 		9D16A7F61AE8487A00CADC97 /* UserAttributeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D16A7F11AE8487A00CADC97 /* UserAttributeViewController.m */; };
-		9D16A8001AE848DC00CADC97 /* LPUIAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D16A7FD1AE848DC00CADC97 /* LPUIAlertView.m */; };
 		9D16A8011AE848DC00CADC97 /* PubUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D16A7FF1AE848DC00CADC97 /* PubUtils.m */; };
 		9D1B2F261AF14633001EA843 /* LPMessageListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B2F231AF14633001EA843 /* LPMessageListener.m */; };
 		9D1B2F271AF14633001EA843 /* LPZoneEventListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B2F251AF14633001EA843 /* LPZoneEventListener.m */; };
@@ -33,6 +32,7 @@
 		9D642FCF1AFAA93C00802EDC /* beacons.json in Resources */ = {isa = PBXBuildFile; fileRef = 9D642FCA1AFAA93C00802EDC /* beacons.json */; };
 		9D642FD01AFAA93C00802EDC /* LPBeaconZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D642FCC1AFAA93C00802EDC /* LPBeaconZone.m */; };
 		9D642FD11AFAA93C00802EDC /* LPBeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D642FCE1AFAA93C00802EDC /* LPBeaconManager.m */; };
+		9DDC9F4F1B03D1E1001587B3 /* MessageDeepLinkHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDC9F4E1B03D1E1001587B3 /* MessageDeepLinkHandler.m */; };
 		B069F5F74A3475C67B67A9D0 /* libPods-PWLMSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC7B47AA60EB8D085F0772B /* libPods-PWLMSample.a */; };
 /* End PBXBuildFile section */
 
@@ -72,8 +72,6 @@
 		9D16A7ED1AE8487A00CADC97 /* AttributeTableViewTextFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AttributeTableViewTextFieldCell.xib; path = Attributes/AttributeTableViewTextFieldCell.xib; sourceTree = "<group>"; };
 		9D16A7F01AE8487A00CADC97 /* UserAttributeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserAttributeViewController.h; path = Attributes/UserAttributeViewController.h; sourceTree = "<group>"; };
 		9D16A7F11AE8487A00CADC97 /* UserAttributeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserAttributeViewController.m; path = Attributes/UserAttributeViewController.m; sourceTree = "<group>"; };
-		9D16A7FC1AE848DC00CADC97 /* LPUIAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LPUIAlertView.h; path = Utils/LPUIAlertView.h; sourceTree = "<group>"; };
-		9D16A7FD1AE848DC00CADC97 /* LPUIAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LPUIAlertView.m; path = Utils/LPUIAlertView.m; sourceTree = "<group>"; };
 		9D16A7FE1AE848DC00CADC97 /* PubUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PubUtils.h; path = Utils/PubUtils.h; sourceTree = "<group>"; };
 		9D16A7FF1AE848DC00CADC97 /* PubUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PubUtils.m; path = Utils/PubUtils.m; sourceTree = "<group>"; };
 		9D16A83A1AE85AC400CADC97 /* libPods-PWLMSample-AFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-PWLMSample-AFNetworking.a"; path = "Pods/build/Debug-iphoneos/libPods-PWLMSample-AFNetworking.a"; sourceTree = "<group>"; };
@@ -104,6 +102,8 @@
 		9D642FCD1AFAA93C00802EDC /* LPBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LPBeaconManager.h; path = BLE/LPBeaconManager.h; sourceTree = "<group>"; };
 		9D642FCE1AFAA93C00802EDC /* LPBeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LPBeaconManager.m; path = BLE/LPBeaconManager.m; sourceTree = "<group>"; };
 		9DB02E4B1AEAB51900E8C894 /* PWLocalpoint.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PWLocalpoint.framework; path = PWLMSample/PWLocalpoint.framework; sourceTree = "<group>"; };
+		9DDC9F4D1B03D1E1001587B3 /* MessageDeepLinkHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessageDeepLinkHandler.h; path = Messages/MessageDeepLinkHandler.h; sourceTree = "<group>"; };
+		9DDC9F4E1B03D1E1001587B3 /* MessageDeepLinkHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessageDeepLinkHandler.m; path = Messages/MessageDeepLinkHandler.m; sourceTree = "<group>"; };
 		A0A5398C738E9D466980292B /* Pods-PWLMSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PWLMSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PWLMSample/Pods-PWLMSample.debug.xcconfig"; sourceTree = "<group>"; };
 		AFB6D0FA2DA850F461C5B090 /* libPods-PWLMSampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PWLMSampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFF847CF506C6A4CADEE4C2 /* Pods-PWLMSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PWLMSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-PWLMSample/Pods-PWLMSample.release.xcconfig"; sourceTree = "<group>"; };
@@ -249,6 +249,8 @@
 				9D16A7E21AE8486F00CADC97 /* MessageDetailViewController.m */,
 				9D16A7E31AE8486F00CADC97 /* MessagesManager.h */,
 				9D16A7E41AE8486F00CADC97 /* MessagesManager.m */,
+				9DDC9F4D1B03D1E1001587B3 /* MessageDeepLinkHandler.h */,
+				9DDC9F4E1B03D1E1001587B3 /* MessageDeepLinkHandler.m */,
 			);
 			name = Messages;
 			sourceTree = "<group>";
@@ -256,8 +258,6 @@
 		9D16A7F71AE848B600CADC97 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				9D16A7FC1AE848DC00CADC97 /* LPUIAlertView.h */,
-				9D16A7FD1AE848DC00CADC97 /* LPUIAlertView.m */,
 				9D16A7FE1AE848DC00CADC97 /* PubUtils.h */,
 				9D16A7FF1AE848DC00CADC97 /* PubUtils.m */,
 			);
@@ -344,6 +344,11 @@
 				TargetAttributes = {
 					9D0A2B921AE842FD004B7579 = {
 						CreatedOnToolsVersion = 6.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					9D0A2BAE1AE842FD004B7579 = {
 						CreatedOnToolsVersion = 6.3;
@@ -474,9 +479,9 @@
 				9D1EADF91B011BB600811D27 /* LPCustomProximityZoneManager.m in Sources */,
 				9D1EADF31B010A1100811D27 /* LPCustomGeoZoneManager.m in Sources */,
 				9D16A7E71AE8486F00CADC97 /* MessageDetailViewController.m in Sources */,
-				9D16A8001AE848DC00CADC97 /* LPUIAlertView.m in Sources */,
 				9D16A7E81AE8486F00CADC97 /* MessagesManager.m in Sources */,
 				9D0A2B991AE842FD004B7579 /* main.m in Sources */,
+				9DDC9F4F1B03D1E1001587B3 /* MessageDeepLinkHandler.m in Sources */,
 				9D642FD11AFAA93C00802EDC /* LPBeaconManager.m in Sources */,
 				9D16A7E91AE8486F00CADC97 /* MessagesTableViewController.m in Sources */,
 			);

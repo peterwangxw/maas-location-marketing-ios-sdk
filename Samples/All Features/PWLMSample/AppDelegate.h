@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <PWLocalpoint/PWLocalpoint.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, UIAlertViewDelegate, PWLocalpointDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, PWLocalpointDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

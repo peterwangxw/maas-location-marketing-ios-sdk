@@ -16,12 +16,11 @@
 #pragma mark - Constant Strings
 
 // iBeacon data JSON file
+/* If you beacon mapping file is in remote, please set kPWLPiBeaconRemoteUrl and set both file name(kPWLPiBeaconRemoteUrl) and file type(kPWLPiBeaconLocalFileType) to nil */
+static NSString * const kPWLPiBeaconRemoteUrl = @"https://dl.dropboxusercontent.com/u/117922424/beacons.json";
 /* If your beacon mapping file is in local, please set file name(kPWLPiBeaconRemoteUrl) and file type(kPWLPiBeaconLocalFileType) and set kPWLPiBeaconRemoteUrl to `nil` */
 static NSString * const kPWLPiBeaconLocalFileName = @"beacons";
 static NSString * const kPWLPiBeaconLocalFileType = @"json";
-/* If you beacon mapping file is in remote, please set kPWLPiBeaconRemoteUrl and set both file name(kPWLPiBeaconRemoteUrl) and file type(kPWLPiBeaconLocalFileType) to nil */
-static NSString * const kPWLPiBeaconRemoteUrl = nil;
-
 
 // User defauts keys
 static NSString * const PWSavedBeaconDataKey = @"PWSavedBeaconDataKey";
