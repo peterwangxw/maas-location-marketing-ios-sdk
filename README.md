@@ -3,7 +3,7 @@ Location Marketing Sample Application for iOS
 
 Version 3.0
 
-This is Phunware's iOS SDK for the Location Marketing module. Visit http://maas.phunware.com/ for more details and to sign up.
+This is Phunware's iOS SDK for the Location Marketing module. 
 
 
 Requirements
@@ -27,7 +27,7 @@ pod 'PWLocalpoint', :git => 'git@github.com:xwang-phunware/maas-location-marketi
 
 Documentation
 ------------
-PWLocalpoint documentation is included in the Documents folder in the repository as both HTML and as a .docset. You can also find the latest documentation here: https://github.com/xwang-phunware/maas-location-marketing-ios-sdk/wiki
+PWLocalpoint documentation is included in the Documents folder in the repository as both HTML and as a .docset. 
 
 Here are some resources to help you configure your app for Apple Push Notifications:
 - [Apple's documentation](https://developer.apple.com/library/ios/#documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Introduction.html)
